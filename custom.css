@@ -1,1 +1,25 @@
 /* WRITE CSS HERE FOR DOCUMENT */
+* {
+  --colwhite: #fbfbfb;
+  --colblack: #1f1f1f;
+  --colorange: #f5912e;
+  --coldarkgreen: #1a310f;
+  --collightgreen: #4e9b45;
+}
+
+body {
+  background-color: var(--colwhite);
+}
+
+p {
+  color: var(--colblack);
+}
+
+a {
+  color: var(--coldarkgreen);
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--collightgreen);
+}
