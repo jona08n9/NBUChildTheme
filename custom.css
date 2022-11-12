@@ -46,7 +46,8 @@ a:hover {
   background-color: var(--coldarkgreen);
   margin-top: 0 !important;
   margin-bottom: 0 !important;
-  padding-block: 50px;
+  padding-top: 60px !important;
+  padding-bottom: 60px;
   justify-content: center;
 }
 
