@@ -1,4 +1,5 @@
 /* WRITE CSS HERE FOR DOCUMENT */
+
 * {
   --colwhite: #fbfbfb;
   --colblack: #1f1f1f;
@@ -11,6 +12,7 @@
 
 body {
   background-color: var(--colwhite);
+  color: var(--colblack);
 }
 
 p {
