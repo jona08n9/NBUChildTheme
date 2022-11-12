@@ -1,3 +1,11 @@
+/*** NB UNITED CUSTOM CSS STYLESHEET
+
+TABLE OF CONTENT
+
+1.0.0 - Root 
+
+2.0.0 - Generelt 
+
 /* WRITE CSS HERE FOR DOCUMENT */
 
 * {
@@ -6,17 +14,14 @@
   --colorange: #f5912e;
   --coldarkgreen: #1a310f;
   --collightgreen: #4e9b45;
+
+  font-size: 16px;
 }
 
 /*** GENERELT ***/
 
 body {
   background-color: var(--colwhite);
-  color: var(--colblack);
-}
-
-p {
-  color: var(--colblack);
 }
 
 a {
@@ -26,4 +31,66 @@ a {
 a:hover {
   text-decoration: underline;
   color: var(--collightgreen);
+}
+
+/*** FOOTER ***/
+
+#colophon {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+.site-info {
+  border-top: none;
+  background-color: var(--coldarkgreen);
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-block: 50px;
+  justify-content: center;
+}
+
+.site-info h5,
+.site-info p {
+  color: var(--colwhite);
+}
+
+.site-name {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) 3fr;
+  gap: 20px;
+}
+
+/* LOGO */
+.site-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* SOCIALS */
+.footer__socials {
+  text-align: center;
+}
+
+.footer__socials__icons--container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-block: 50px;
+}
+
+.footer__socials__icons--icon {
+  width: 35px;
+  height: auto;
+  filter: invert(66%) sepia(68%) saturate(1721%) hue-rotate(339deg) brightness(99%) contrast(94%);
+}
+
+/* TOP TOP */
+#toTop {
+  text-align: right;
+  font-size: 1.3rem;
+}
+
+#toTop a {
+  color: #f5912e;
 }
