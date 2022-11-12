@@ -7,6 +7,8 @@
   --collightgreen: #4e9b45;
 }
 
+/*** GENERELT ***/
+
 body {
   background-color: var(--colwhite);
 }
