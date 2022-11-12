@@ -1,0 +1,18 @@
+** HOW TO **
+
+You've unpacked the zip-file, great job! Now do the following:
+
+1. Rename the folder to what you want - IMPORTANT! Only small letters and hyphen between words.
+
+2. Open "style.css"
+
+3. Change information in stylesheet according to your specific use
+	a) Theme name --> What your want to call your child theme
+	b) Template --> The parent template you have chosen.
+	c) Version --> Usually your start at 1.0.0 when released (major version change, read more on https://semver.org/) but change to your liking. 
+	d) Description --> Short description. Usually for the product or costumer to whom the child template is created for. 
+	e) Author --> You, who are making the child theme.
+
+4. Place folder with the two files on your server in the folder ".../wp-content/theme/".
+
+5. Style on your CSS to see the magic.
