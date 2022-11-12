@@ -43,7 +43,7 @@
 			<div class="site-name">
 				<?php if ( has_custom_logo() ) : ?>
 					<div class="site-logo"><?php the_custom_logo(); ?></div>
-					<address class="adress">
+					<address class="footer__adress">
 						<h5>Nørrebro United</h5>
 						<p>Husumgade 44, Bahguset<p>
 						<p>2200 København N<p>
@@ -59,7 +59,7 @@
 								<a href="https://www.youtube.com/channel/UCdvwAte7PTyy5_FdjBkwGzg"><img class="footer__socials__icons--icon" src="https://api.iconify.design/mdi:youtube.svg" alt="youtube icon"></a>
 							</div>
 					</div>
-					<div clas="topTop">
+					<div class="toTop">
 						<h5 id="toTop"><a href="#masthead">Til Toppen</a></h5>
 					</div>
 				</div>

@@ -15,7 +15,7 @@ TABLE OF CONTENT
   --coldarkgreen: #1a310f;
   --collightgreen: #4e9b45;
 
-  font-size: 16px;
+  font-size: 14px;
 }
 
 /*** GENERELT ***/
@@ -58,26 +58,48 @@ a:hover {
 
 .site-name {
   display: grid;
-  grid-template-columns: repeat(3, 1fr) 3fr;
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "top top top" "logo adress some";
+  gap: 5px;
 }
 
 /* LOGO */
 .site-logo {
+  grid-area: logo;
   display: flex;
   justify-content: center;
-  align-items: center;
+}
+
+/* ADRESS */
+.footer__adress {
+  grid-area: adress;
+  font-style: normal;
+  text-align: center;
+}
+
+.footer__adress a {
+  color: var(--colwhite) !important;
+  text-decoration: none !important;
+}
+
+.footer__adress a:hover {
+  color: var(--colorange) !important;
+  text-decoration: underline !important;
 }
 
 /* SOCIALS */
 .footer__socials {
+  grid-area: some;
   text-align: center;
 }
 
 .footer__socials__icons--container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin-block: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-block-start: 10px;
+  gap: 10px;
 }
 
 .footer__socials__icons--icon {
@@ -87,11 +109,62 @@ a:hover {
 }
 
 /* TOP TOP */
+
+.toTop {
+  grid-area: top;
+  margin-block-end: 40px;
+}
+
 #toTop {
-  text-align: right;
-  font-size: 1.3rem;
+  text-align: center;
+  font-size: 1.5rem;
 }
 
 #toTop a {
   color: #f5912e;
+  text-decoration: none;
+}
+#toTop a:hover {
+  color: #f5912e;
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 500px) {
+  * {
+    font-size: 16px;
+  }
+
+  .site-info {
+    padding-inline: 10px;
+  }
+
+  .site-name {
+    grid-template-columns: repeat(3, 1fr) 3fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "logo adress some top";
+    gap: 20px;
+  }
+
+  /* ADRESS */
+  .footer__adress {
+    text-align: left;
+  }
+
+  /* SOCIALS */
+  .footer__socials__icons--container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-block: 50px;
+  }
+
+  /* TO TOP */
+  .toTop {
+    text-align: right;
+    margin-block-end: 0;
+  }
+
+  #toTop {
+    text-align: right;
+    font-size: 1.3rem;
+  }
 }
