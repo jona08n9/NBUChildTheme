@@ -33,6 +33,12 @@ a:hover {
   color: var(--collightgreen);
 }
 
+/*** LEAFLET MAP STYLING ***/
+
+.leaflet-control-attribution .leaflet-control {
+  display: none;
+}
+
 /*** FOOTER ***/
 
 #colophon {
