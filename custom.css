@@ -40,8 +40,13 @@ a:hover {
   background-color: var(--colwhite) !important;
 }
 
-ul {
+ul.sub-menu {
   border: none !important;
+}
+
+#primary-menu-list > li > a {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 /*** LEAFLET MAP STYLING ***/
