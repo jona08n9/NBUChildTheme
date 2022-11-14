@@ -25,8 +25,8 @@ TABLE OF CONTENT
 
 /*** GENERELT ***/
 
-body {
-  background-color: var(--colwhite) !important;
+#page {
+  background-color: var(--colwhite);
 }
 
 /* h1 */
@@ -98,6 +98,31 @@ a {
 a:hover {
   text-decoration: underline;
   color: var(--collightgreen);
+}
+/*** HEADER  ***/
+
+.primary-navigation > div > .menu-wrapper > li > .sub-menu li.menu-item.menu-item-type-post_type.menu-item-object-page,
+.primary-navigation > .primary-menu-container,
+.primary-navigation-open .menu-button-container {
+  background-color: var(--colwhite) !important;
+}
+
+ul.sub-menu {
+  border: none !important;
+}
+
+#primary-menu-list > li > a {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--coldarkgreen);
+  text-transform: uppercase;
+}
+#primary-menu-list > li > a:hover {
+  color: var(--colorange);
+}
+
+.primary-navigation .sub-menu .menu-item > a:hover {
+  color: var(--colorange);
 }
 
 /*** LEAFLET MAP STYLING ***/
