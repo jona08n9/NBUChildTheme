@@ -40,6 +40,10 @@ a:hover {
   background-color: var(--colwhite) !important;
 }
 
+ul {
+  border: none;
+}
+
 /*** LEAFLET MAP STYLING ***/
 
 .leaflet-control-attribution .leaflet-control {
