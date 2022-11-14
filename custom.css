@@ -34,7 +34,8 @@ a:hover {
 }
 /*** HEADER  ***/
 
-.primary-navigation > div > .menu-wrapper > li > .sub-menu li.menu-item.menu-item-type-post_type.menu-item-object-page {
+.primary-navigation > div > .menu-wrapper > li > .sub-menu li.menu-item.menu-item-type-post_type.menu-item-object-page,
+.primary-menu-container {
   background-color: var(--colwhite);
 }
 
