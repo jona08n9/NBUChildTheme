@@ -21,7 +21,7 @@ TABLE OF CONTENT
 /*** GENERELT ***/
 
 body {
-  background-color: var(--colwhite);
+  background-color: var(--colwhite) !important;
 }
 
 a {
@@ -39,7 +39,7 @@ a:hover {
   display: none;
 }
 
-.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
+img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
   width: 50px !important;
   height: 50px !important;
 }

@@ -18,6 +18,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ?>/custom.css ">
+	<link rel="stylesheet" href="https://use.typekit.net/wfp5wxu.css">
 	<?php wp_head(); ?>
 </head>
 
