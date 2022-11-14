@@ -25,7 +25,6 @@
 	<?php endif; ?>
 
 	<div class="entry-content">
-	
 		<?php
 		the_content();
 
@@ -38,44 +37,7 @@
 			)
 		);
 		?>
-		<div id="teamview">
-
-		</div>
-<template>
-	<div class="team">
-	<img class="team_pic"src="" alt="">
-	<h3 class="team_name"></h3>
-	<p class="short_description"></p>
-	<button class="read_more">Læs mere</button>
-	</div>
-</template>
 	</div><!-- .entry-content -->
-
-	<script>
-		let hold;
-		const team_view = document.querySelector("#teamview");
-		const template =  document.querySelector("template");
-		const url="https://madvigux.dk/nbunited/wp-json/wp/v2/hold";
-		async function getJson(){
-			let response = await fetch(url);
-			hold = await response.json();
-			visHold();
-		}
-
-		function visHold(){
-			console.log(hold);
-			hold.forEach(team => {
-				const clone = template.cloneNode(true).content;
-				clone.querySelector("img").src = team.billeder[0].guid;
-				clone.querySelector("h3").textContent = team.title.rendered;
-				team_view.appendChild(clone);
-				
-
-			})
-
-		}
-	getJson();
-	</script>
 
 	<?php if ( get_edit_post_link() ) : ?>
 		<footer class="entry-footer default-max-width">
