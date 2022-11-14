@@ -35,7 +35,7 @@ a:hover {
 /*** HEADER  ***/
 
 .primary-navigation > div > .menu-wrapper > li > .sub-menu li {
-  background-color: var(--colwhite);
+  background-color: var(--colwhite) !important; 
 }
 
 /*** LEAFLET MAP STYLING ***/
