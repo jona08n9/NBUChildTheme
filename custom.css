@@ -33,10 +33,6 @@ a:hover {
   color: var(--collightgreen);
 }
 
-h2 {
-  color: blue;
-}
-
 /*** LEAFLET MAP STYLING ***/
 
 .leaflet-control-attribution .leaflet-control {
