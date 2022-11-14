@@ -41,7 +41,7 @@ a:hover {
 }
 
 ul {
-  border: none;
+  border: none !important;
 }
 
 /*** LEAFLET MAP STYLING ***/
