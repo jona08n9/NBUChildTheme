@@ -27,3 +27,15 @@ a:hover {
   text-decoration: underline;
   color: var(--collightgreen);
 }
+
+/* vores hold */
+#teamview {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.team img {
+  max-width: 20%;
+  aspect-ratio: 1/1;
+  border-radius: 5px;
+}
