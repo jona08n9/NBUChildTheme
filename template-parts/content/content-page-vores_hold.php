@@ -66,8 +66,8 @@
 		let filter_sport= "alle";
 		const team_view = document.querySelector("#teamview");
 		const template =  document.querySelector("template");
-		const url="https://tobiasroland.dk/kea/09_cms/testersite_for_childtheme/wordpress/wp-json/wp/v2/hold?per_page=100";
-		const catUrl="https://tobiasroland.dk/kea/09_cms/testersite_for_childtheme/wordpress/wp-json/wp/v2/categories";
+		const url="https://madvigux.dk/nbunited/wp-json/wp/v2/hold/?per_page=100";
+		const catUrl="https://madvigux.dk/nbunited/wp-json/wp/v2/categories";
 
 
 		// Henter json med hold og json med categorier

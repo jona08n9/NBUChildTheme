@@ -71,7 +71,7 @@
 
 	let hold;
 
-	const url="https://tobiasroland.dk/kea/09_cms/testersite_for_childtheme/wordpress/wp-json/wp/v2/hold/"+<?php echo get_the_ID() ?>;
+	const url="https://madvigux.dk/nbunited/wp-json/wp/v2/hold"+<?php echo get_the_ID() ?>;
 		async function getJson(){
 			console.log("id er", <?php echo get_the_ID() ?> )
 			let response = await fetch(url);
