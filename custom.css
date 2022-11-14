@@ -36,7 +36,7 @@ a:hover {
 
 .primary-navigation > div > .menu-wrapper > li > .sub-menu li.menu-item.menu-item-type-post_type.menu-item-object-page,
 .primary-navigation > .primary-menu-container {
-  background-color: var(--colwhite);
+  background-color: var(--colwhite) !important;
 }
 
 /*** LEAFLET MAP STYLING ***/
