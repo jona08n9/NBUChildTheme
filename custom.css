@@ -54,6 +54,10 @@ ul.sub-menu {
   color: var(--colorange);
 }
 
+.primary-navigation .sub-menu .menu-item > a:hover {
+  color: var(--colorange);
+}
+
 /*** LEAFLET MAP STYLING ***/
 
 .leaflet-control-attribution .leaflet-control {
