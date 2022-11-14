@@ -24,6 +24,10 @@ body {
   background-color: var(--colwhite);
 }
 
+#page {
+  background-color: var(--colwhite);
+}
+
 a {
   color: var(--coldarkgreen);
 }
