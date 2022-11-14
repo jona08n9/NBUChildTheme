@@ -58,6 +58,10 @@ ul.sub-menu {
   color: var(--colorange);
 }
 
+.site-header {
+  padding-bottom: 0;
+}
+
 /*** LEAFLET MAP STYLING ***/
 
 .leaflet-control-attribution .leaflet-control {
