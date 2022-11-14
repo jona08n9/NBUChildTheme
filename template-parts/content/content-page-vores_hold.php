@@ -38,6 +38,9 @@
 			)
 		);
 		?>
+
+		<button>Fodbold</button>
+		<button>Håndbold</button>
 		<div id="teamview">
 
 		</div>
@@ -55,7 +58,7 @@
 		let hold;
 		const team_view = document.querySelector("#teamview");
 		const template =  document.querySelector("template");
-		const url="https://madvigux.dk/nbunited/wp-json/wp/v2/hold";
+		const url="https://tobiasroland.dk/kea/09_cms/testersite_for_childtheme/wordpress/wp-json/wp/v2/hold?per_page=100";
 		async function getJson(){
 			let response = await fetch(url);
 			hold = await response.json();
@@ -68,6 +71,11 @@
 				const clone = template.cloneNode(true).content;
 				clone.querySelector("img").src = team.billeder[0].guid;
 				clone.querySelector("h3").textContent = team.title.rendered;
+				clone.querySelector(".team").addEventListener("click", () =>{
+					location.href = team.link;
+				})
+
+
 				team_view.appendChild(clone);
 				
 
