@@ -34,7 +34,7 @@ a:hover {
 }
 /*** HEADER  ***/
 
-.sub-menu {
+.primary-navigation > div > .menu-wrapper > li > .sub-menu li {
   background-color: var(--colwhite);
 }
 
