@@ -58,7 +58,7 @@ ul.sub-menu {
   color: var(--colorange);
 }
 
-.site-header {
+#masthead.site-header {
   padding-bottom: 0;
 }
 
