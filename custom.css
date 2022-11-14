@@ -9,13 +9,18 @@ TABLE OF CONTENT
 /* WRITE CSS HERE FOR DOCUMENT */
 
 * {
-  --colwhite: #fbfbfb;
+  --colwhite: #f2f2f2;
   --colblack: #1f1f1f;
   --colorange: #f5912e;
   --coldarkgreen: #1a310f;
   --collightgreen: #4e9b45;
 
-  font-size: 14px;
+  --header1: 5rem;
+  --header2: 3.5rem;
+  --header3: 2.5rem;
+  --para: 1.6rem;
+  --headerfont: "forma-djr-display";
+  --parafont: "mr-eaves-modern";
 }
 
 /*** GENERELT ***/
@@ -24,6 +29,68 @@ body {
   background-color: var(--colwhite) !important;
 }
 
+/* h1 */
+.entry-title {
+  font-family: var(--headerfont);
+  text-transform: uppercase;
+  font-size: var(--header1);
+  color: var(--coldarkgreen) !important;
+}
+
+/* h2 */
+#main h2 {
+  font-family: var(--headerfont);
+  text-transform: uppercase;
+  color: var(--colblack);
+  font-size: var(--header2);
+}
+
+#main .wp-block-cover__inner-container > h2 {
+  color: var(--colwhite);
+}
+
+/* h3 */
+#main h3 {
+  font-family: var(--headerfont);
+  font-size: var(--header3);
+  color: var(--coldarkgreen);
+  text-transform: uppercase;
+}
+
+/* p */
+#main p {
+  font-family: var(--parafont);
+  font-size: var(--para);
+  color: var(--colblack);
+  line-height: 25px;
+}
+
+#main .wp-block-cover__inner-container p {
+  color: var(--colwhite);
+}
+
+/* knapper */
+#main .wp-block-button__link.wp-element-button {
+  background-color: var(--coldarkgreen);
+  color: var(--colwhite);
+}
+#main .wp-block-button__link.wp-element-button:hover {
+  border-color: var(--coldarkgreen) !important;
+  background-color: transparent !important;
+  color: var(--coldarkgreen) !important;
+}
+
+#main .wp-block-cover__inner-container .wp-block-button__link.wp-element-button {
+  border-color: var(--colwhite);
+  background-color: transparent;
+  color: var(--colwhite);
+}
+#main .wp-block-cover__inner-container .wp-block-button__link.wp-element-button:hover {
+  background-color: var(--colwhite) !important;
+  color: var(--colblack) !important;
+  border-color: var(--colwhite) !important;
+}
+/* links */
 a {
   color: var(--coldarkgreen);
 }
