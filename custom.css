@@ -236,6 +236,18 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
   text-decoration: underline;
 }
 
+/* vores hold */
+#teamview {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.team img {
+  max-width: 20%;
+  aspect-ratio: 1/1;
+  border-radius: 5px;
+}
+
 @media screen and (min-width: 500px) {
   * {
     font-size: 16px;
