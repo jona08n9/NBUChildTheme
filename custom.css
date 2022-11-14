@@ -20,10 +20,6 @@ TABLE OF CONTENT
 
 /*** GENERELT ***/
 
-body {
-  background-color: var(--colwhite);
-}
-
 #page {
   background-color: var(--colwhite);
 }
@@ -35,6 +31,11 @@ a {
 a:hover {
   text-decoration: underline;
   color: var(--collightgreen);
+}
+/*** HEADER  ***/
+
+.sub-menu {
+  background-color: var(--colwhite);
 }
 
 /*** LEAFLET MAP STYLING ***/
