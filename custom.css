@@ -39,6 +39,11 @@ a:hover {
   display: none;
 }
 
+.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
+  width: 50px !important;
+  height: 50px !important;
+}
+
 /*** FOOTER ***/
 
 #colophon {
