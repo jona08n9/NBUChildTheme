@@ -118,7 +118,7 @@ li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-childr
   color: var(--coldarkgreen);
   text-transform: uppercase;
 }
-li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children a:focus {
+a:focus {
   text-decoration: none !important;
 }
 
