@@ -155,21 +155,23 @@ li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-childr
   color: var(--coldarkgreen);
   text-transform: uppercase;
 }
+#primary-menu-list > li > a:hover {
+  text-decoration: none;
+}
 
 #masthead.site-header {
   padding-bottom: 20px;
   margin-inline: 10px;
 }
-#primary-mobile-menu .site .button:focus,
-button:focus,
-input[type="submit"]:focus,
-input[type="reset"]:focus,
-.wp-block-search .wp-block-search__button:focus,
-.wp-block-button .wp-block-button__link:focus,
-.wp-block-file a.wp-block-file__button:focus {
-  outline-offset: 0px;
-  outline: none;
+
+.primary-navigation .sub-menu .menu-item > a {
+  text-decoration: none;
 }
+.primary-navigation .sub-menu .menu-item > a:hover {
+  color: var(--colorange);
+  text-decoration: none;
+}
+
 /*** LEAFLET MAP STYLING ***/
 
 .leaflet-control-attribution .leaflet-control {
@@ -359,13 +361,6 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
 
   /*** HEADER ***/
 
-  .primary-navigation .sub-menu .menu-item > a {
-    text-decoration: none;
-  }
-  .primary-navigation .sub-menu .menu-item > a:hover {
-    color: var(--colorange);
-    text-decoration: none;
-  }
   ul.sub-menu {
     border: solid 1px var(--coldarkgreen) !important;
   }
