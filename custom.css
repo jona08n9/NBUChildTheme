@@ -34,16 +34,8 @@ TABLE OF CONTENT
 
 /*** GENERELT ***/
 
-<<<<<<< HEAD
 #page {
   background-color: var(--colwhite);
-=======
-/* header */
-#main .wp-block-cover__inner-container > h1 {
-  font-family: var(--headerfont);
-  text-transform: uppercase;
-  font-size: var(--header1);
->>>>>>> origin/Jachob-gangnam-style
 }
 
 /** HEADERS **/
