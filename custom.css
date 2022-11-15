@@ -118,8 +118,7 @@ li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-childr
   color: var(--coldarkgreen);
   text-transform: uppercase;
 }
-#primary-menu-list .menu-wrapper li > a:hover {
-  color: var(--colorange);
+.site a:focus:not(.wp-block-button__link):not(.wp-block-file__button) {
   text-decoration: none;
 }
 
