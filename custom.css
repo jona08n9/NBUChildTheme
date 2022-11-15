@@ -108,7 +108,7 @@ a:hover {
   background-color: var(--colwhite);
 }
 
-ul.sub-menu {
+#primary-menu-container .sub-menu {
   border: none;
 }
 
