@@ -134,13 +134,7 @@ ul.sub-menu {
   margin-inline: 10px;
 }
 
-#page .site #primary-mobile-menu .button:focus,
-button:focus,
-input[type="submit"]:focus,
-input[type="reset"]:focus,
-.wp-block-search .wp-block-search__button:focus,
-.wp-block-button .wp-block-button__link:focus,
-.wp-block-file a.wp-block-file__button:focus {
+#primary-mobile-menu .button:focus {
   outline-offset: 0px;
   outline: none;
 }
