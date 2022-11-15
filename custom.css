@@ -130,8 +130,12 @@ ul.sub-menu {
 }
 
 #masthead.site-header {
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   margin-inline: 10px;
+}
+
+nav#site-navigation.primary-navigation {
+  margin-left: 350px;
 }
 
 /*** LEAFLET MAP STYLING ***/
