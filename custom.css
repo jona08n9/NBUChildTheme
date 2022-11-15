@@ -132,9 +132,8 @@ ul.sub-menu {
 #masthead.site-header {
   padding-bottom: 20px;
   margin-inline: 10px;
-  justify-content: space-between;
+  justify-content: space-between !important;
 }
-
 
 /*** LEAFLET MAP STYLING ***/
 
