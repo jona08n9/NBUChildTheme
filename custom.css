@@ -122,11 +122,11 @@ ul.sub-menu {
   text-decoration: none;
 }
 .primary-navigation .sub-menu .menu-item > a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 .primary-navigation .sub-menu .menu-item > a:hover {
   color: var(--colorange);
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 #masthead.site-header {
