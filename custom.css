@@ -2,17 +2,35 @@
 
 Search for the terms in the Table of content, to find the info you are lookin for. 
 
+
+____________________________________________________
+
 TABLE OF CONTENT
 1.0.0 - ROOT
 2.0.0 - GENERELT 
-  2.1.0 - HEADERS
-    2.1.1 - H1
-    2.1.2 - H2
-    2.1.3 - H3
-  2.2.0 - P
-  2.3.0 - BUTTONS
+    2.1.0 - HEADERS
+        2.1.1 - H1
+        2.1.2 - H2
+        2.1.3 - H3
+        2.2.0 - P
+        2.3.0 - BUTTONS
+        2.3.0 - A
+3.0.0 - HEADER
+    3.1.0 - MAIN MENU NAVIGATION
+4.0.0 - FOOTER
+    4.1.0 - FOOTER CONTAINER
+    4.2.0 - FOOTER TEXT
+    4.3.0 - FOOTER INFO
+        4.3.1 - LOGO
+        4.3.2 - ADRESS
+        4.3.3 - SOME
+        4.3.4 - GO TO TOP
+5.0.0 - LEAFLET MAP STYLING
+6.0.0 - VORES HOLD
 
-/* WRITE CSS HERE FOR DOCUMENT */
+X.X.X - MEDIA Q MIN-WIDTH 500PX
+
+____________________________________________________
 
 /*** ROOT ***/
 
@@ -40,11 +58,11 @@ TABLE OF CONTENT
 /** HEADERS **/
 
 /* H1 */
-.entry-title {
+.entry-header .entry-title {
   font-family: var(--headerfont);
   text-transform: uppercase;
   font-size: var(--header1);
-  color: var(--coldarkgreen) !important;
+  color: var(--coldarkgreen);
 }
 
 /* H2 */
@@ -85,9 +103,9 @@ TABLE OF CONTENT
   color: var(--colwhite);
 }
 #main .wp-block-button__link.wp-element-button:hover {
-  border-color: var(--coldarkgreen) !important;
-  background-color: transparent !important;
-  color: var(--coldarkgreen) !important;
+  background-color: transparent !important; /*IMPORTANT FOR OVERWRITING PARENT THEME*/
+  color: var(--coldarkgreen) !important; /*IMPORTANT FOR OVERWRITING PARENT THEME*/
+  border-color: var(--coldarkgreen) !important; /*IMPORTANT FOR OVERWRITING PARENT THEME*/
 }
 
 #main .wp-block-cover__inner-container .wp-block-button__link.wp-element-button {
@@ -96,11 +114,12 @@ TABLE OF CONTENT
   color: var(--colwhite);
 }
 #main .wp-block-cover__inner-container .wp-block-button__link.wp-element-button:hover {
-  background-color: var(--colwhite) !important;
-  color: var(--colblack) !important;
-  border-color: var(--colwhite) !important;
+  border-color: var(--colwhite) !important; /*IMPORTANT FOR OVERWRITING PARENT THEME*/
+  background-color: var(--colwhite) !important; /*IMPORTANT FOR OVERWRITING PARENT THEME*/
+  color: var(--colblack) !important; /*IMPORTANT FOR OVERWRITING PARENT THEME*/
 }
-/* links */
+
+/** A **/
 a {
   color: var(--coldarkgreen);
 }
@@ -109,7 +128,10 @@ a:hover {
   text-decoration: underline;
   color: var(--collightgreen);
 }
+
 /*** HEADER  ***/
+
+/** MAIN MENU NAVIGATION **/
 
 .primary-navigation > div > .menu-wrapper > li > .sub-menu li.menu-item.menu-item-type-post_type.menu-item-object-page,
 .primary-navigation > .primary-menu-container,
@@ -139,18 +161,9 @@ ul.sub-menu {
   padding-bottom: 0;
 }
 
-/*** LEAFLET MAP STYLING ***/
-
-.leaflet-control-attribution .leaflet-control {
-  display: none;
-}
-
-img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
-  width: 50px !important;
-  height: 50px !important;
-}
-
 /*** FOOTER ***/
+
+/** FOOTER CONTAINER **/
 
 #colophon {
   margin: 0;
@@ -168,11 +181,6 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
   justify-content: center;
 }
 
-.site-info h5,
-.site-info p {
-  color: var(--colwhite);
-}
-
 .site-name {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -180,6 +188,15 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
   grid-template-areas: "top top top" "logo adress some";
   gap: 5px;
 }
+
+/** FOOTER TEXT **/
+
+.site-info h5,
+.site-info p {
+  color: var(--colwhite);
+}
+
+/** FOOTER INFO **/
 
 /* LOGO */
 .site-logo {
@@ -205,7 +222,7 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
   text-decoration: underline !important;
 }
 
-/* SOCIALS */
+/* SOME */
 .footer__socials {
   grid-area: some;
   text-align: center;
@@ -225,7 +242,7 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
   filter: invert(66%) sepia(68%) saturate(1721%) hue-rotate(339deg) brightness(99%) contrast(94%);
 }
 
-/* TOP TOP */
+/* GO TO TOP */
 
 .toTop {
   grid-area: top;
@@ -246,7 +263,18 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
   text-decoration: underline;
 }
 
-/* vores hold */
+/*** LEAFLET MAP STYLING ***/
+
+.leaflet-control-attribution .leaflet-control {
+  display: none;
+}
+
+img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
+  width: 50px !important;
+  height: 50px !important;
+}
+
+/*** VORES HOLD ***/
 #teamview {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));

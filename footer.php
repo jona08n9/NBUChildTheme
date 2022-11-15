@@ -45,11 +45,11 @@
 					<div class="site-logo"><?php the_custom_logo(); ?></div>
 					<address class="footer__adress">
 						<h5>Nørrebro United</h5>
-						<p>Husumgade 44, Bahguset<p>
-						<p>2200 København N<p>
-						<p>+45 60 79 61 40<p>
-						<p><a href="mailto:kontor@nbunited.dk">kontor@nbunited.dk</a><p>
-						<p>CVR: 31 43 53 27<p>
+						<p>Husumgade 44, Bahguset</p>
+						<p>2200 København N</p>
+						<p>+45 60 79 61 40</p>
+						<p><a href="mailto:kontor@nbunited.dk">kontor@nbunited.dk</a></p>
+						<p>CVR: 31 43 53 27</p>
 					</address>
 					<div class="footer__socials">
 							<h5>Følg os</h5>
