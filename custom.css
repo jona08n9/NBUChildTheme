@@ -310,7 +310,7 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
     padding-top: 0;
   }
   #primary-menu-list > li > a:focus,
-  .primary-navigation .current-menu-item > a:hover {
-    text-decoration: none;
+  .primary-navigation a:hover {
+    text-decoration: unset !important;
   }
 }
