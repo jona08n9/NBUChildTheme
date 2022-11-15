@@ -101,9 +101,8 @@ a:hover {
 }
 /*** HEADER  ***/
 
-.primary-navigation > div > .menu-wrapper > li > .sub-menu li.menu-item.menu-item-type-post_type.menu-item-object-page,
-.primary-navigation > .primary-menu-container,
-.primary-navigation-open .menu-button-container {
+.primary-menu-container,
+.primary-navigation > div > .menu-wrapper > li > .sub-menu li.menu-item.menu-item-type-post_type.menu-item-object-page {
   background-color: var(--colwhite);
 }
 
