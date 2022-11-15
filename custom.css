@@ -6,9 +6,15 @@ TABLE OF CONTENT
 1.0.0 - ROOT
 2.0.0 - GENERELT 
   2.1.0 - HEADERS
-  2.
+    2.1.1 - H1
+    2.1.2 - H2
+    2.1.3 - H3
+  2.2.0 - P
+  2.3.0 - BUTTONS
 
 /* WRITE CSS HERE FOR DOCUMENT */
+
+/*** ROOT ***/
 
 * {
   --colwhite: #f2f2f2;
@@ -31,7 +37,9 @@ TABLE OF CONTENT
   background-color: var(--colwhite);
 }
 
-/* h1 */
+/** HEADERS **/
+
+/* H1 */
 .entry-title {
   font-family: var(--headerfont);
   text-transform: uppercase;
@@ -39,7 +47,7 @@ TABLE OF CONTENT
   color: var(--coldarkgreen) !important;
 }
 
-/* h2 */
+/* H2 */
 #main h2 {
   font-family: var(--headerfont);
   text-transform: uppercase;
@@ -51,7 +59,7 @@ TABLE OF CONTENT
   color: var(--colwhite);
 }
 
-/* h3 */
+/* H3 */
 #main h3 {
   font-family: var(--headerfont);
   font-size: var(--header3);
@@ -59,7 +67,7 @@ TABLE OF CONTENT
   text-transform: uppercase;
 }
 
-/* p */
+/** P **/
 #main p {
   font-family: var(--parafont);
   font-size: var(--para);
@@ -71,7 +79,7 @@ TABLE OF CONTENT
   color: var(--colwhite);
 }
 
-/* knapper */
+/** BUTTONS **/
 #main .wp-block-button__link.wp-element-button {
   background-color: var(--coldarkgreen);
   color: var(--colwhite);
