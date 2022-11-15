@@ -99,9 +99,10 @@ a:hover {
   text-decoration: underline;
   color: var(--collightgreen);
 }
+
 /*** HEADER  ***/
 
-.primary-menu-container,
+#site-navigation .primary-menu-container,
 .primary-navigation > div > .menu-wrapper > li > .sub-menu li.menu-item.menu-item-type-post_type.menu-item-object-page {
   background-color: var(--colwhite);
 }
