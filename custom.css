@@ -103,6 +103,7 @@ a:hover {
 /*** HEADER  ***/
 
 #site-navigation .primary-menu-container,
+#site-navigation .menu-button-container,
 .primary-navigation > div > .menu-wrapper > li > .sub-menu li.menu-item.menu-item-type-post_type.menu-item-object-page {
   background-color: var(--colwhite);
 }
