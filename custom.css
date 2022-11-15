@@ -108,7 +108,7 @@ a:hover {
   background-color: var(--colwhite);
 }
 
-ul.sub-menu {
+li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children > ul.sub-menu {
   border: none;
 }
 
