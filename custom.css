@@ -27,6 +27,7 @@ TABLE OF CONTENT
         4.3.4 - GO TO TOP
 5.0.0 - LEAFLET MAP STYLING
 6.0.0 - VORES HOLD
+7.0.0 - NYHEDER OG ARRANGEMENTER
 
 X.X.X - MEDIA Q MIN-WIDTH 500PX
 
@@ -290,7 +291,7 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
   border-radius: 5px;
 }
 
-/* Nyheder og Arrangementer  */
+/*** NYHEDER OG ARRANGEMENTER ***/
 
 #nyheder .news_content {
   display: grid;
