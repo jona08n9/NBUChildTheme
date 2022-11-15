@@ -109,7 +109,7 @@ a:hover {
 }
 
 ul.sub-menu {
-  border: none !important;
+  border: none;
 }
 
 #primary-menu-list > li > a {
