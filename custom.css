@@ -286,4 +286,10 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
     text-align: right;
     font-size: 1.3rem;
   }
+
+  /*** HEADER ***/
+
+  ul.sub-menu {
+    border: solid 1px var(--coldarkgreen) !important;
+  }
 }
