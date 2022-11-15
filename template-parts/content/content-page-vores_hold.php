@@ -85,13 +85,14 @@
 			visHold();
 		}
 
-
+//  tilføjer eventListener til knapper, og kalder filter funktionen ved klik
 function addEventListenerToButtons(){
 	document.querySelectorAll("#filter_buttons button").forEach(elm => {
 		elm.addEventListener("click", filter);
 	})
 }
 
+// tager værdien for dataset.sport på den knap der er blevet klikket på og tildeler denne værdi til variablen filter_sport. Herefter kaldes funktionen visHold.
 function filter(){
 	filter_sport = this.dataset.sport;
 	console.log(filter_sport);
@@ -100,7 +101,8 @@ function filter(){
 }
 
 
-
+// funktionen startermed at rydde indhold i div med id teamview. herefter kører den et forEach loop på alle hold i vores array.
+// inden at holdet kan blive vist bliver der tjekket om variablen filtersport endten har værdien "alle" eller om holdet indeholder den samme værdi som filter_sport variablen.
 		function visHold(){
 			console.log(hold);
 
@@ -122,7 +124,7 @@ function filter(){
 				})
 		}
 
-		
+		// funktionen getJson bliver kaldt
 	getJson();
 	
 	</script>

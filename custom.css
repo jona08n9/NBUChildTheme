@@ -258,6 +258,18 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
   border-radius: 5px;
 }
 
+/* Nyheder og Arrangementer  */
+
+#nyheder .news_content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+#arrangementer .arrangement_content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
 @media screen and (min-width: 500px) {
   * {
     font-size: 16px;
