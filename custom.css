@@ -122,13 +122,6 @@ li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-childr
   color: var(--colorange);
   text-decoration: none;
 }
-.primary-navigation .sub-menu .menu-item > a {
-  text-decoration: none !important;
-}
-.primary-navigation .sub-menu .menu-item > a:hover {
-  color: var(--colorange);
-  text-decoration: none !important;
-}
 
 #masthead.site-header {
   padding-bottom: 20px;
@@ -304,6 +297,13 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
 
   /*** HEADER ***/
 
+  .primary-navigation .sub-menu .menu-item > a {
+    text-decoration: none;
+  }
+  .primary-navigation .sub-menu .menu-item > a:hover {
+    color: var(--colorange);
+    text-decoration: none;
+  }
   /* ul.sub-menu {
     border: solid 1px var(--coldarkgreen) !important;
   }
