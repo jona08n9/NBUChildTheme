@@ -301,7 +301,7 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
     padding-top: 10px;
     
   }
-  #mastehead.site-header.has-logo.has-menu {
+  #masthead.site-header.has-logo.has-menu {
     justify-content: space-between !important;
   }
 }
