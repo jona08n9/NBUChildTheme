@@ -61,13 +61,17 @@
 	<script>
 
 		// opretter variabler
-		let hold;
+		
 		let categories;
 		let filter_sport= "alle";
+		const catUrl="https://madvigux.dk/nbunited/wp-json/wp/v2/categories";
+
+
+
+		let hold;
 		const team_view = document.querySelector("#teamview");
 		const template =  document.querySelector("template");
 		const url="https://madvigux.dk/nbunited/wp-json/wp/v2/hold/?per_page=100";
-		const catUrl="https://madvigux.dk/nbunited/wp-json/wp/v2/categories";
 
 
 		// Henter json med hold og json med categorier
