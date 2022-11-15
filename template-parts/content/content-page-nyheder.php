@@ -77,11 +77,11 @@
 		const section_nyhed = document.querySelector(".news_content");
 		const section_arrangement = document.querySelector(".arrangement_content");
 		const template =  document.querySelector("template");
-		const url="https://tobiasroland.dk/kea/09_cms/testersite_for_childtheme/wordpress/wp-json/wp/v2/nyheder?per_page=100";
+		const url="https://madvigux.dk/nbunited/wp-json/wp/v2/nyheder?per_page=100";
 
 
 		let categories;
-		const catUrl="https://tobiasroland.dk/kea/09_cms/testersite_for_childtheme/wordpress/wp-json/wp/v2/categories";
+		const catUrl="https://madvigux.dk/nbunited/wp-json/wp/v2/categories";
 
 
 
