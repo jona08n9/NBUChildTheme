@@ -82,7 +82,7 @@
 
 		function visHold(){
 			
-				document.querySelector(".hold_navn").textContent = hold.title.rendered;
+				document.querySelector(".hold_navn").innerHTML = `<h3>${hold.title.rendered}</h3>`;
 				document.querySelector(".hold_beskrivelse").textContent = hold.holdbeskrivelse;
 				document.querySelector(".traenings_tider").textContent = hold.traeningstider_1;
 				document.querySelector(".traenings_dage").textContent = hold.traeningsdag_1;
