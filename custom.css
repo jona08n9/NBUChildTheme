@@ -297,4 +297,7 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
   ul.sub-menu {
     border: solid 1px var(--coldarkgreen) !important;
   }
+  #masthead.site-header {
+    padding-top: 10px;
+  }
 }
