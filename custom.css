@@ -299,9 +299,9 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
   }
   #masthead.site-header {
     padding-top: 10px;
-    
   }
   #masthead.site-header.has-logo.has-menu {
+    display: flex;
     justify-content: space-between !important;
   }
 }
