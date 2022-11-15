@@ -133,8 +133,7 @@ ul.sub-menu {
   padding-bottom: 20px;
   margin-inline: 10px;
 }
-
-#primary-mobile-menu .button:focus {
+#site-navigation > .menu-button-container > primary-mobile-menu .button:focus {
   outline-offset: 0px;
   outline: none;
 }
