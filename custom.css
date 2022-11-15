@@ -108,7 +108,7 @@ a:hover {
   background-color: var(--colwhite);
 }
 
-ul#primary-menu-list.menu-wrapper {
+ul#primary-menu-list.menu-wrapper > li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children {
   border: none;
 }
 
