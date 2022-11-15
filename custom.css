@@ -105,6 +105,7 @@ a:hover {
 .primary-navigation > .primary-menu-container,
 .primary-navigation-open .menu-button-container {
   background-color: var(--colwhite) !important;
+  max-width: none;
 }
 
 ul.sub-menu {
