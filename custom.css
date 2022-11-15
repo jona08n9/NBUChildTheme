@@ -298,8 +298,8 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
     border: solid 1px var(--coldarkgreen) !important;
   }
   #masthead.site-header {
-    padding-bottom: 20px;
     padding-inline: 20px;
     max-width: 100vw;
+    padding-top: 0;
   }
 }
