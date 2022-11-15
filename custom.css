@@ -118,7 +118,7 @@ li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-childr
   color: var(--coldarkgreen);
   text-transform: uppercase;
 }
-.site a:focus:not(.wp-block-button__link):not(.wp-block-file__button) {
+li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children a:focus {
   text-decoration: none;
 }
 
