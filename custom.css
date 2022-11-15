@@ -55,13 +55,6 @@ ____________________________________________________
 
 /*** GENERELT ***/
 
-/* header */
-#main .wp-block-cover__inner-container > h1 {
-  font-family: var(--headerfont);
-  text-transform: uppercase;
-  font-size: var(--header1);
-}
-
 /** HEADERS **/
 
 /* H1 */
@@ -70,6 +63,12 @@ ____________________________________________________
   text-transform: uppercase;
   font-size: var(--header1);
   color: var(--coldarkgreen);
+}
+
+#main .wp-block-cover__inner-container > h1 {
+  font-family: var(--headerfont);
+  text-transform: uppercase;
+  font-size: var(--header1);
 }
 
 /* H2 */
