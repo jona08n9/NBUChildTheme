@@ -105,7 +105,6 @@ a:hover {
 .primary-navigation > .primary-menu-container,
 .primary-navigation-open .menu-button-container {
   background-color: var(--colwhite) !important;
-  max-width: none;
 }
 
 ul.sub-menu {
@@ -131,7 +130,8 @@ ul.sub-menu {
 }
 
 #masthead.site-header {
-  padding-bottom: 0;
+  padding: 0;
+  margin: 0;
 }
 
 /*** LEAFLET MAP STYLING ***/
