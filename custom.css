@@ -134,6 +134,10 @@ ul.sub-menu {
   margin-inline: 10px;
 }
 
+button {
+  text-decoration: none;
+  outline-style: none;
+}
 /*** LEAFLET MAP STYLING ***/
 
 .leaflet-control-attribution .leaflet-control {
