@@ -105,7 +105,7 @@ async function getJson(){
 
 			nyhed.forEach(news => {
 
-			if (news.categories.includes(parseInt(13))){
+			if (news.categories.includes(parseInt(12))){
 
 				const clone = template.cloneNode(true).content;
 				clone.querySelector(".news_pic").src = news.nyhedsbillede.guid;
