@@ -132,7 +132,6 @@ ul.sub-menu {
 #masthead.site-header {
   padding-bottom: 20px;
   margin-inline: 10px;
-  justify-content: space-between !important;
 }
 
 /*** LEAFLET MAP STYLING ***/
@@ -300,5 +299,9 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
   }
   #masthead.site-header {
     padding-top: 10px;
+    
+  }
+  #mastehead.site-header.has-logo.has-menu {
+    justify-content: space-between !important;
   }
 }
