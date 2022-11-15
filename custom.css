@@ -124,6 +124,7 @@ ul.sub-menu {
 
 .primary-navigation .sub-menu .menu-item > a:hover {
   color: var(--colorange);
+  text-decoration: none;
 }
 
 #masthead.site-header {
