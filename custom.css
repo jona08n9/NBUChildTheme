@@ -14,6 +14,7 @@ TABLE OF CONTENT
   --colorange: #f5912e;
   --coldarkgreen: #1a310f;
   --collightgreen: #4e9b45;
+  --collightgreen2: #1b5a2a;
 
   --header1: 5rem;
   --header2: 3.5rem;
@@ -25,8 +26,11 @@ TABLE OF CONTENT
 
 /*** GENERELT ***/
 
-body {
-  background-color: var(--colwhite) !important;
+/* header */
+#main .wp-block-cover__inner-container > h1 {
+  font-family: var(--headerfont);
+  text-transform: uppercase;
+  font-size: var(--header1);
 }
 
 /* h1 */
@@ -41,10 +45,11 @@ body {
 #main h2 {
   font-family: var(--headerfont);
   text-transform: uppercase;
-  color: var(--colblack);
+  color: var(--coldarkgreen);
   font-size: var(--header2);
 }
 
+#main .wp-block-cover__inner-container > h3,
 #main .wp-block-cover__inner-container > h2 {
   color: var(--colwhite);
 }
@@ -53,7 +58,7 @@ body {
 #main h3 {
   font-family: var(--headerfont);
   font-size: var(--header3);
-  color: var(--coldarkgreen);
+  color: var(--collightgreen2);
   text-transform: uppercase;
 }
 
@@ -81,9 +86,11 @@ body {
 }
 
 #main .wp-block-cover__inner-container .wp-block-button__link.wp-element-button {
-  border-color: var(--colwhite);
-  background-color: transparent;
-  color: var(--colwhite);
+  border-color: var(--colorange);
+  background-color: var(--colorange);
+  color: var(--coldarkgreen);
+  border-radius: 10px;
+  text-transform: uppercase;
 }
 #main .wp-block-cover__inner-container .wp-block-button__link.wp-element-button:hover {
   background-color: var(--colwhite) !important;
@@ -91,17 +98,10 @@ body {
   border-color: var(--colwhite) !important;
 }
 
-/* nav */
+/* splash */
 #main .entry-content .wp-block-cover__image-background.wp-image-175 {
   left: unset;
   right: unset;
-  width: 100vw;
-}
-
-#page #masthead .site-header {
-  padding-top: 0;
-  padding-bottom: 0;
-  margin-inline: 10px;
   width: 100vw;
 }
 
