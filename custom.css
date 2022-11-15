@@ -121,10 +121,12 @@ ul.sub-menu {
   color: var(--colorange);
   text-decoration: none;
 }
-
+.primary-navigation .sub-menu .menu-item > a {
+  text-decoration: none;
+}
 .primary-navigation .sub-menu .menu-item > a:hover {
   color: var(--colorange);
-  text-decoration: none !important;
+  text-decoration: none;
 }
 
 #masthead.site-header {
