@@ -138,32 +138,46 @@ a:hover {
 
 /*** HEADER  ***/
 
-.primary-navigation > div > .menu-wrapper > li > .sub-menu li.menu-item.menu-item-type-post_type.menu-item-object-page,
-.primary-navigation > .primary-menu-container,
-.primary-navigation-open .menu-button-container {
-  background-color: var(--colwhite) !important;
+#site-navigation .primary-menu-container,
+#site-navigation .menu-button-container,
+.primary-navigation > div > .menu-wrapper > li > .sub-menu li.menu-item.menu-item-type-post_type.menu-item-object-page {
+  background-color: var(--colwhite);
 }
 
-ul.sub-menu {
-  border: none !important;
+li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children > ul.sub-menu {
+  border: none;
 }
 
 #primary-menu-list > li > a {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bold;
   color: var(--coldarkgreen);
   text-transform: uppercase;
 }
-#primary-menu-list > li > a:hover {
-  color: var(--colorange);
-}
-
-.primary-navigation .sub-menu .menu-item > a:hover {
-  color: var(--colorange);
-}
 
 #masthead.site-header {
-  padding-bottom: 0;
+  padding-bottom: 20px;
+  margin-inline: 10px;
+}
+#primary-mobile-menu .site .button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+.wp-block-search .wp-block-search__button:focus,
+.wp-block-button .wp-block-button__link:focus,
+.wp-block-file a.wp-block-file__button:focus {
+  outline-offset: 0px;
+  outline: none;
+}
+/*** LEAFLET MAP STYLING ***/
+
+.leaflet-control-attribution .leaflet-control {
+  display: none;
+}
+
+img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
+  width: 50px !important;
+  height: 50px !important;
 }
 
 /*** FOOTER ***/
@@ -344,7 +358,24 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
 
   /*** HEADER ***/
 
+  .primary-navigation .sub-menu .menu-item > a {
+    text-decoration: none;
+  }
+  .primary-navigation .sub-menu .menu-item > a:hover {
+    color: var(--colorange);
+    text-decoration: none;
+  }
   ul.sub-menu {
     border: solid 1px var(--coldarkgreen) !important;
+  }
+
+  #masthead.site-header {
+    padding-inline: 20px;
+    max-width: 100vw;
+    padding-top: 0;
+  }
+  #primary-menu-list > li > a:focus,
+  .primary-navigation a:hover {
+    text-decoration: unset !important;
   }
 }
