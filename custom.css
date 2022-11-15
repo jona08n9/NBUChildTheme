@@ -142,7 +142,7 @@ input[type="reset"]:focus,
 .wp-block-button .wp-block-button__link:focus,
 .wp-block-file a.wp-block-file__button:focus {
   outline-offset: 0px;
-  outline: none;
+  outline: none !important;
 }
 /*** LEAFLET MAP STYLING ***/
 
