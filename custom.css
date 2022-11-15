@@ -9,6 +9,7 @@ TABLE OF CONTENT
     2.1.1 - H1
     2.1.2 - H2
     2.1.3 - H3
+    2.1.4 - H4
   2.2.0 - P
   2.3.0 - BUTTONS
 
@@ -26,6 +27,7 @@ TABLE OF CONTENT
   --header1: 5rem;
   --header2: 3.5rem;
   --header3: 2.5rem;
+  --header4: 2rem;
   --para: 1.6rem;
   --headerfont: "forma-djr-display";
   --parafont: "mr-eaves-modern";
@@ -65,6 +67,17 @@ TABLE OF CONTENT
   font-size: var(--header3);
   color: var(--coldarkgreen);
   text-transform: uppercase;
+}
+
+/* H4 */
+.site-info h4 {
+  grid-column: 1 / 4;
+  font-family: var(--headerfont);
+  font-size: var(--header4);
+  font-weight: 900;
+  font-style: italic;
+  color: var(--colwhite);
+  margin-block-end: 20px;
 }
 
 /** P **/
@@ -163,14 +176,14 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
   background-color: var(--coldarkgreen);
   margin-top: 0 !important;
   margin-bottom: 0 !important;
-  padding-top: 60px !important;
   padding-bottom: 60px;
-  justify-content: center;
+  padding-inline: 15px;
 }
 
-.site-info h5,
+.site-info,
 .site-info p {
   color: var(--colwhite);
+  text-transform: none;
 }
 
 .site-name {
@@ -183,14 +196,19 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
 
 /* LOGO */
 .site-logo {
-  grid-area: logo;
+  grid-area: top;
   display: flex;
   justify-content: center;
+}
+
+.custom-logo-link img {
+  max-width: 150px;
 }
 
 /* ADRESS */
 .footer__adress {
   grid-area: adress;
+  grid-column: 1 / 4;
   font-style: normal;
   text-align: center;
 }
@@ -207,20 +225,21 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
 
 /* SOCIALS */
 .footer__socials {
-  grid-area: some;
+  grid-column: 1 / 4;
   text-align: center;
 }
 
 .footer__socials__icons--container {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-evenly;
   margin-block-start: 10px;
   gap: 10px;
+  margin-block-end: 30px;
 }
 
 .footer__socials__icons--icon {
-  width: 35px;
+  width: 50px;
   height: auto;
   filter: invert(66%) sepia(68%) saturate(1721%) hue-rotate(339deg) brightness(99%) contrast(94%);
 }
@@ -229,20 +248,21 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
 
 .toTop {
   grid-area: top;
-  margin-block-end: 40px;
+  display: flex;
+  justify-content: space-between;
+  margin-block-end: 15px;
 }
 
 #toTop {
-  text-align: center;
-  font-size: 1.5rem;
+  align-self: center;
 }
 
 #toTop a {
-  color: #f5912e;
+  color: var(--colorange);
   text-decoration: none;
 }
 #toTop a:hover {
-  color: #f5912e;
+  color: var(--colwhite);
   text-decoration: underline;
 }
 
@@ -265,6 +285,7 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
 
   .site-info {
     padding-inline: 10px;
+    justify-content: space-between;
   }
 
   .site-name {
@@ -274,6 +295,33 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
     gap: 20px;
   }
 
+  /* FOOTER */
+  .custom-logo-link img {
+    max-width: 300px;
+  }
+
+  .footer__adress {
+    grid-area: logo;
+    grid-column: 1 / 3;
+  }
+
+  .footer__socials {
+    grid-area: some;
+    text-align: center;
+    grid-column: 3 / 5;
+  }
+
+  .toTop {
+    padding-inline-start: 80px;
+  }
+
+  #toTop {
+    padding-inline-start: 80px;
+  }
+  .toTop a {
+    font-size: var(--header4);
+  }
+
   /* ADRESS */
   .footer__adress {
     text-align: left;
@@ -281,9 +329,9 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
 
   /* SOCIALS */
   .footer__socials__icons--container {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(3, 1fr);
-    margin-block: 50px;
+    flex-direction: column;
   }
 
   /* TO TOP */
