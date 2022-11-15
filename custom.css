@@ -379,4 +379,8 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
   .primary-navigation a:hover {
     text-decoration: unset !important;
   }
+
+  main#main.site-main {
+    padding-top: 0;
+  }
 }
