@@ -119,7 +119,7 @@ ul.sub-menu {
 }
 #primary-menu-list > li > a:hover {
   color: var(--colorange);
-  text-decoration-style: underline !important;
+  text-decoration: none !important;
 }
 
 .primary-navigation .sub-menu .menu-item > a:hover {
