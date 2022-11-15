@@ -134,7 +134,7 @@ ul.sub-menu {
   margin-inline: 10px;
 }
 
-.site .button:focus,
+#page .site .button:focus,
 button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
@@ -142,7 +142,7 @@ input[type="reset"]:focus,
 .wp-block-button .wp-block-button__link:focus,
 .wp-block-file a.wp-block-file__button:focus {
   outline-offset: 0px;
-  outline: none !important;
+  outline: none;
 }
 /*** LEAFLET MAP STYLING ***/
 
