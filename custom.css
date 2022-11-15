@@ -22,10 +22,11 @@ TABLE OF CONTENT
   --colorange: #f5912e;
   --coldarkgreen: #1a310f;
   --collightgreen: #4e9b45;
+  --collightgreen2: #1b5a2a;
 
-  --header1: 5rem;
-  --header2: 3.5rem;
-  --header3: 2.5rem;
+  --header1: clamp(3rem, 5vw, 5rem);
+  --header2: clamp(2.5rem, 5vw, 3.5rem);
+  --header3: clamp(2.3rem, 5vw, 2.5rem);
   --para: 1.6rem;
   --headerfont: "forma-djr-display";
   --parafont: "mr-eaves-modern";
@@ -33,8 +34,16 @@ TABLE OF CONTENT
 
 /*** GENERELT ***/
 
+<<<<<<< HEAD
 #page {
   background-color: var(--colwhite);
+=======
+/* header */
+#main .wp-block-cover__inner-container > h1 {
+  font-family: var(--headerfont);
+  text-transform: uppercase;
+  font-size: var(--header1);
+>>>>>>> origin/Jachob-gangnam-style
 }
 
 /** HEADERS **/
@@ -51,19 +60,20 @@ TABLE OF CONTENT
 #main h2 {
   font-family: var(--headerfont);
   text-transform: uppercase;
-  color: var(--colblack);
+  color: var(--coldarkgreen);
   font-size: var(--header2);
 }
 
+#main .wp-block-cover__inner-container > h3,
 #main .wp-block-cover__inner-container > h2 {
-  color: var(--colwhite);
+  color: var(--colorange);
 }
 
 /* H3 */
 #main h3 {
   font-family: var(--headerfont);
   font-size: var(--header3);
-  color: var(--coldarkgreen);
+  color: var(--collightgreen2);
   text-transform: uppercase;
 }
 
@@ -91,15 +101,25 @@ TABLE OF CONTENT
 }
 
 #main .wp-block-cover__inner-container .wp-block-button__link.wp-element-button {
-  border-color: var(--colwhite);
-  background-color: transparent;
-  color: var(--colwhite);
+  border-color: var(--colorange);
+  background-color: var(--colorange);
+  color: var(--coldarkgreen);
+  border-radius: 10px;
+  text-transform: uppercase;
 }
 #main .wp-block-cover__inner-container .wp-block-button__link.wp-element-button:hover {
   background-color: var(--colwhite) !important;
   color: var(--colblack) !important;
   border-color: var(--colwhite) !important;
 }
+
+/* splash */
+#main .entry-content .wp-block-cover__image-background.wp-image-175 {
+  left: unset;
+  right: unset;
+  width: 100vw;
+}
+
 /* links */
 a {
   color: var(--coldarkgreen);
