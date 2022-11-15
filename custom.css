@@ -90,6 +90,14 @@ body {
   color: var(--colblack) !important;
   border-color: var(--colwhite) !important;
 }
+
+/* nav */
+#main .entry-content .wp-block-cover__image-background.wp-image-175 {
+  left: unset;
+  right: unset;
+  width: 100vw;
+}
+
 /* links */
 a {
   color: var(--coldarkgreen);
