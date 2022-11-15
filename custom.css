@@ -134,7 +134,7 @@ ul.sub-menu {
   margin-inline: 10px;
 }
 
-button {
+button:focus {
   text-decoration: none;
   outline-style: none;
 }
