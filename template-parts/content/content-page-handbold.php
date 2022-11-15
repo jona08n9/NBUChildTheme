@@ -23,7 +23,7 @@
 			<?php twenty_twenty_one_post_thumbnail(); ?>
 		</header><!-- .entry-header -->
 	<?php endif; ?>
-	
+
 	<div class="entry-content">
 		<?php
 		the_content();
@@ -37,14 +37,8 @@
 			)
 		);
 		?>
-		
 
-		<nav id="filter_buttons">
-<button data-sport="alle">Alle</button>
-	<button data-sport="14">Børn (4-19 år)</button>
-	<button data-sport="5">Herre senior</button>
-	<button data-sport="6">Kvinde senior</button>
-	</nav>
+
 
 		<div id="teamview">
 
@@ -62,13 +56,17 @@
 	<button class="read_more">Læs mere</button>
 	</div>
 </template>
+
+
 	</div><!-- .entry-content -->
+
+
 
 	<script>
 // opretter variabler
 let categories;
-		let filter_sport= "alle";
-		const catUrl="https://madvigux.dk/nbunited/wp-json/wp/v2/categories";
+		// let filter_sport= "alle";
+		// const catUrl="https://madvigux.dk/nbunited/wp-json/wp/v2/categories";
 
 
 		let hold;
@@ -82,29 +80,29 @@ getJson();
 		// Henter json med hold og json med categorier
 		async function getJson(){
 			let response = await fetch(url);
-			let catdata = await fetch(catUrl);
+			// let catdata = await fetch(catUrl);
 			hold = await response.json();
-			categories = await catdata.json();
+			// categories = await catdata.json();
 			// console.log(categories);
 			console.log(hold);
-			addEventListenerToButtons();
+			// addEventListenerToButtons();
 			visHold();
 		}
 
 		//  tilføjer eventListener til knapper, og kalder filter funktionen ved klik
-function addEventListenerToButtons(){
-	document.querySelectorAll("#filter_buttons button").forEach(elm => {
-		elm.addEventListener("click", filter);
-	})
-}
+// function addEventListenerToButtons(){
+// 	document.querySelectorAll("#filter_buttons button").forEach(elm => {
+// 		elm.addEventListener("click", filter);
+// 	})
+// }
 
 // tager værdien for dataset.sport på den knap der er blevet klikket på og tildeler denne værdi til variablen filter_sport. Herefter kaldes funktionen visHold.
-function filter(){
-	filter_sport = this.dataset.sport;
-	// console.log(filter_sport);
-	visHold();
+// function filter(){
+// 	filter_sport = this.dataset.sport;
+// 	// console.log(filter_sport);
+// 	visHold();
 
-}
+// }
 
 // funktionen startermed at rydde indhold i div med id teamview. herefter kører den et forEach loop på alle hold i vores array.
 // inden at holdet kan blive vist bliver der tjekket om variablen filtersport endten har værdien "alle" eller om holdet indeholder den samme værdi som filter_sport variablen.
@@ -115,7 +113,7 @@ function visHold(){
 
 			hold.forEach(team => {
 
-			if (filter_sport == "alle" || team.categories.includes(parseInt(filter_sport))){
+			
 
 				const clone = template.cloneNode(true).content;
 				clone.querySelector("img").src = team.billeder[0].guid;
@@ -125,12 +123,15 @@ function visHold(){
 					location.href = team.link;})
 				team_view.appendChild(clone);
 				
-			}
+			
 				})
 		}
 
 
 	</script>
+
+
+
 
 	<?php if ( get_edit_post_link() ) : ?>
 		<footer class="entry-footer default-max-width">
