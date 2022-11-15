@@ -134,7 +134,7 @@ ul.sub-menu {
   margin-inline: 10px;
 }
 
-#page .site .button:focus,
+#page .site #primary-mobile-menu .button:focus,
 button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
