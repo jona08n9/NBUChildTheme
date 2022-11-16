@@ -39,12 +39,21 @@
 		?>
 		
 
-		<nav id="filter_buttons">
+
+	</div><!-- .entry-content -->
+	<div class="json_header">
+	<h2>Vores hold</h2>
+	</div>
+	
+
+	<nav id="filter_buttons">
 <button data-sport="alle">Alle</button>
 	<button data-sport="14">Børn (4-19 år)</button>
 	<button data-sport="5">Herre senior</button>
 	<button data-sport="6">Kvinde senior</button>
 	</nav>
+
+
 
 		<div id="teamview">
 
@@ -62,7 +71,6 @@
 	<button class="read_more">Læs mere</button>
 	</div>
 </template>
-	</div><!-- .entry-content -->
 
 	<script>
 // opretter variabler
