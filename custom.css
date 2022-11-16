@@ -414,13 +414,21 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
 }
 
 /*** BLIV MEDLEM ***/
-.is-layout-flex.wp-container-3.wp-block-columns.alignwide {
+.page-id-110 .is-layout-flex.wp-container-3.wp-block-columns.alignwide {
   border-bottom: solid 3px;
   padding-bottom: 60px;
 }
 
 #main .wp-container-6 > div:first-child {
   margin-bottom: 50px;
+}
+/*** OM Nørrebro United ***/
+.page-id-107 .wp-container-15 > div:first-child {
+  order: 2;
+}
+
+.page-id-107 .wp-container-15 > div:nth-child(2) {
+  order: 1;
 }
 
 @media screen and (min-width: 500px) {
@@ -508,6 +516,15 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
   }
 
   .wp-container-5 > div:nth-child(2) {
+    order: 2;
+  }
+
+  /*** OM Nørrebro United ***/
+  .page-id-107 .wp-container-15 > div:first-child {
+    order: 1;
+  }
+
+  .page-id-107 .wp-container-15 > div:nth-child(2) {
     order: 2;
   }
 }
