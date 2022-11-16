@@ -430,7 +430,7 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
   #arrangementer .arrangement_content .news_article:hover {
     max-width: 400px;
     background-color: white;
-    padding: 20px;
+    padding: 10px;
     border: unset;
     filter: drop-shadow(7px 7px 3px #1f1f1f5e);
     transform: translate(-3px, -3px);
