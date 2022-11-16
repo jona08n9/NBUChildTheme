@@ -60,6 +60,7 @@ ____________________________________________________
 
 /* H1 */
 #main .entry-header {
+  max-width: 1500px;
   margin-bottom: 30px;
   padding-bottom: 30px;
 }
@@ -70,6 +71,7 @@ ____________________________________________________
   font-size: var(--header1);
   color: var(--coldarkgreen);
   font-weight: 900;
+  max-width: 15ch;
 }
 
 #main .wp-block-cover__inner-container > h1 {
@@ -408,7 +410,8 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
   #nyheder .news_content,
   #arrangementer .arrangement_content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, 400px);
+    justify-content: flex-start;
     padding-inline: unset;
   }
 
@@ -418,7 +421,7 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
     grid-template-rows: auto;
     max-width: 400px;
     background-color: white;
-    padding: 20px;
+    padding: 10px;
     border: unset;
     cursor: pointer;
     transition: 250ms;
