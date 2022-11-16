@@ -51,6 +51,7 @@ ____________________________________________________
   --parafont: "mr-eaves-modern";
 
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 /*** GENERELT ***/
@@ -58,7 +59,9 @@ ____________________________________________________
 /** HEADERS **/
 
 /* H1 */
-.entry-header .entry-title {
+#main .entry-header.alignwide,
+#main .entry-title,
+#main .singular.entry-title > h1 {
   font-family: var(--headerfont);
   text-transform: uppercase;
   font-size: var(--header1);
@@ -141,7 +144,12 @@ a:hover {
 
 #site-navigation .primary-menu-container,
 #site-navigation .menu-button-container,
-.primary-navigation > div > .menu-wrapper > li > .sub-menu li.menu-item.menu-item-type-post_type.menu-item-object-page {
+.primary-navigation
+  > div
+  > .menu-wrapper
+  > li
+  > .sub-menu
+  li.menu-item.menu-item-type-post_type.menu-item-object-page {
   background-color: var(--colwhite);
 }
 
@@ -182,6 +190,8 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
   width: 50px !important;
   height: 50px !important;
 }
+
+/* NYHEDER */
 
 /*** FOOTER ***/
 
@@ -377,5 +387,17 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
 
   main#main.site-main {
     padding-top: 0;
+  }
+
+  /*** NYHEDER OG ARRANGEMENTER ***/
+
+  #nyheder .news_content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+
+  #arrangementer .arrangement_content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   }
 }
