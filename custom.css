@@ -413,6 +413,16 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
   grid-template-columns: repeat(3, 1fr);
 }
 
+/*** BLIV MEDLEM ***/
+.is-layout-flex.wp-container-3.wp-block-columns.alignwide {
+  border-bottom: solid 3px;
+  padding-bottom: 60px;
+}
+
+#main .wp-container-6 > div:first-child {
+  margin-bottom: 50px;
+}
+
 @media screen and (min-width: 500px) {
   * {
     font-size: 16px;
