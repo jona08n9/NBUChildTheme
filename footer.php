@@ -61,7 +61,7 @@
 					</div>
 				</div>
 				<div class="toTop">
-					<h4 id="toTop"><a href="#masthead">Til Toppen</a></h4>
+					<h5 id="toTop"><a href="#masthead">Til Toppen</a></h5>
 				</div>
 		</div>
 	<?php else : ?>
