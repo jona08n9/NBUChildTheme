@@ -95,12 +95,12 @@ ____________________________________________________
 
 /* H4 */
 h4 {
-  font-family: var(--headerfont);
-  font-size: var(--header3);
+  font-family: var(--headerfont) !important; /*IMPORTANT FOR OVERWRITING PARENT THEME*/
+  font-size: var(--header3) !important; /*IMPORTANT FOR OVERWRITING PARENT THEME*/
   color: var(--colwhite);
   text-transform: uppercase;
   font-style: italic;
-  font-weight: 900;
+  font-weight: 900 !important; /*IMPORTANT FOR OVERWRITING PARENT THEME*/
 }
 /** P **/
 #main p {
@@ -211,6 +211,7 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
   padding-top: 60px !important;
   padding-bottom: 60px;
   justify-content: center;
+  padding-inline: 20px;
 }
 
 .site-name {
