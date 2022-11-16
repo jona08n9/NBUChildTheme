@@ -46,7 +46,7 @@
 				<div class="site-logo"><?php the_custom_logo(); ?></div>
 				<address class="footer__adress">
 					<h4>Nørrebro United</h4>
-					<p>Husumgade 44, Bahguset</p>
+					<p>Husumgade 44, Baghuset</p>
 					<p>2200 København N</p>
 					<p>+45 60 79 61 40</p>
 					<p><a href="mailto:kontor@nbunited.dk">kontor@nbunited.dk</a></p>
