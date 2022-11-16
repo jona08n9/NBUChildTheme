@@ -43,10 +43,10 @@ ____________________________________________________
   --collightgreen: #4e9b45;
   --collightgreen2: #1b5a2a;
 
-  --header1: clamp(3rem, 5vw, 5rem);
-  --header2: clamp(2.5rem, 5vw, 3.5rem);
-  --header3: clamp(2.3rem, 5vw, 2.5rem);
-  --para: 1.6rem;
+  --header1: clamp(2.3rem, 5vw, 5rem);
+  --header2: clamp(2.1rem, 5vw, 3.5rem);
+  --header3: clamp(1.6rem, 5vw, 1.8rem);
+  --para: 1.3rem;
   --headerfont: "forma-djr-display";
   --parafont: "mr-eaves-modern";
 
@@ -59,13 +59,17 @@ ____________________________________________________
 /** HEADERS **/
 
 /* H1 */
-#main .entry-header.alignwide,
-#main .entry-title,
-#main .singular.entry-title > h1 {
+#main .entry-header {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+
+.entry-header h1.entry-title {
   font-family: var(--headerfont);
   text-transform: uppercase;
   font-size: var(--header1);
   color: var(--coldarkgreen);
+  font-weight: 900;
 }
 
 #main .wp-block-cover__inner-container > h1 {
@@ -80,6 +84,7 @@ ____________________________________________________
   text-transform: uppercase;
   color: var(--coldarkgreen);
   font-size: var(--header2);
+  font-style: italic;
 }
 
 #main .wp-block-cover__inner-container > h3,
@@ -190,8 +195,6 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
   width: 50px !important;
   height: 50px !important;
 }
-
-/* NYHEDER */
 
 /*** FOOTER ***/
 
@@ -320,14 +323,21 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
 
 /*** NYHEDER OG ARRANGEMENTER ***/
 
+#arrangementer .arrangement_content,
 #nyheder .news_content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 2.2em;
+  padding-top: 50px;
+  justify-content: space-evenly;
+  padding-inline: 10px;
 }
 
-#arrangementer .arrangement_content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+.news_article {
+  border-bottom: solid 3px #1f1f1f;
+  padding-bottom: 15px;
 }
 
 @media screen and (min-width: 500px) {
@@ -391,13 +401,46 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
 
   /*** NYHEDER OG ARRANGEMENTER ***/
 
-  #nyheder .news_content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  #nyheder,
+  #arrangementer {
+    max-width: 1500px;
   }
-
+  #nyheder .news_content,
   #arrangementer .arrangement_content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    padding-inline: unset;
+  }
+
+  #nyheder .news_content .news_article,
+  #arrangementer .arrangement_content .news_article {
+    display: grid;
+    grid-template-rows: auto;
+    max-width: 400px;
+    background-color: white;
+    padding: 20px;
+    border: unset;
+    cursor: pointer;
+    transition: 250ms;
+  }
+  #nyheder .news_content .news_article:hover,
+  #arrangementer .arrangement_content .news_article:hover {
+    max-width: 400px;
+    background-color: white;
+    padding: 20px;
+    border: unset;
+    filter: drop-shadow(7px 7px 3px #1f1f1f5e);
+    transform: translate(-3px, -3px);
+    cursor: pointer;
+  }
+
+  #main .news_article > .news_title {
+    color: var(--colorange);
+  }
+
+  #main .news_article > .date {
+    color: var(--collightgreen2);
+    font-style: italic;
+    align-self: flex-end;
   }
 }
