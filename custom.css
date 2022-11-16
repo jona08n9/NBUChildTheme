@@ -275,7 +275,7 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
 .team img {
   max-width: 20%;
   aspect-ratio: 1/1;
-  border-radius: 5px;
+  border-radius: 6px;
 }
 
 @media screen and (min-width: 500px) {
