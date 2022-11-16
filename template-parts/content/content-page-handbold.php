@@ -40,7 +40,16 @@
 
 
 
-		<div id="teamview">
+	
+
+
+	</div><!-- .entry-content -->
+
+.<div class="json_header">
+	<h2>Vores hold</h2>
+	</div>
+
+	<div id="teamview">
 
 </div>
 
@@ -56,9 +65,6 @@
 	<button class="read_more">Læs mere</button>
 	</div>
 </template>
-
-
-	</div><!-- .entry-content -->
 
 
 
