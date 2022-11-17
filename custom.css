@@ -51,10 +51,10 @@ ____________________________________________________
   --collightgreen: #4e9b45;
   --collightgreen2: #1b5a2a;
 
-  --header1: clamp(3rem, 5vw, 5rem);
-  --header2: clamp(2.5rem, 5vw, 3.5rem);
-  --header3: clamp(2.3rem, 5vw, 2.5rem);
-  --para: 1.6rem;
+  --header1: clamp(2.3rem, 5vw, 5rem);
+  --header2: clamp(2.1rem, 5vw, 3.5rem);
+  --header3: clamp(1.6rem, 5vw, 1.8rem);
+  --para: 1.3rem;
   --headerfont: "forma-djr-display";
   --parafont: "mr-eaves-modern";
 
@@ -70,11 +70,19 @@ ____________________________________________________
 /** HEADERS **/
 
 /* H1 */
-.entry-header .entry-title {
+#main .entry-header {
+  max-width: 1500px;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+
+.entry-header h1.entry-title {
   font-family: var(--headerfont);
   text-transform: uppercase;
   font-size: var(--header1);
   color: var(--coldarkgreen);
+  font-weight: 900;
+  max-width: 15ch;
 }
 
 #main .wp-block-cover__inner-container > h1 {
@@ -90,6 +98,7 @@ ____________________________________________________
   color: var(--coldarkgreen);
   font-size: var(--header2);
   margin-block-start: 5rem;
+  font-style: italic;
 }
 
 #main .wp-block-cover__inner-container > h3,
@@ -160,7 +169,12 @@ a:hover {
 
 #site-navigation .primary-menu-container,
 #site-navigation .menu-button-container,
-.primary-navigation > div > .menu-wrapper > li > .sub-menu li.menu-item.menu-item-type-post_type.menu-item-object-page {
+.primary-navigation
+  > div
+  > .menu-wrapper
+  > li
+  > .sub-menu
+  li.menu-item.menu-item-type-post_type.menu-item-object-page {
   background-color: var(--colwhite);
 }
 
@@ -329,14 +343,120 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
 
 /*** NYHEDER OG ARRANGEMENTER ***/
 
+#arrangementer .arrangement_content,
 #nyheder .news_content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 2.2em;
+  padding-top: 50px;
+  justify-content: space-evenly;
+  padding-inline: 10px;
 }
 
-#arrangementer .arrangement_content {
+.news_article {
+  border-bottom: solid 3px #1f1f1f;
+  padding-bottom: 15px;
+}
+
+/*** BLIV MEDLEM ***/
+
+.wp-block-cover.is-light {
+  height: 500px;
+}
+#main .widget-area,
+.pagination,
+.comments-pagination,
+.post-navigation,
+.site-footer,
+.site-header,
+.alignwide,
+.wide-max-width {
+  max-width: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wp-block-cover__inner-container h2 {
+  white-space: nowrap;
+}
+
+/*** FODBOLD ***/
+.wp-block-image img {
+  margin-block-start: 0;
+}
+
+.wp-container-11 > .wp-block-column > .is-layout-flex {
+  justify-content: center;
+}
+
+.wp-container-11 > div:first-child {
+  order: 2;
+}
+.wp-container-11 > div:nth-child(2) {
+  order: 1;
+}
+
+.json_header {
+  display: flex;
+  justify-content: center;
+}
+
+#filter_buttons {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  flex-wrap: wrap;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-inline: 20px;
+}
+
+#filter_buttons button {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--collightgreen2);
+}
+.valgt {
+  background-color: var(--colblack);
+}
+
+/*** VORES HOLD ***/
+.wp-container-5 > div:first-child {
+  order: 2;
+}
+
+.wp-container-5 > div:nth-child(2) {
+  order: 1;
+}
+
+#filter_buttons.filter_buttons_vores-hold {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/*** BLIV MEDLEM ***/
+.page-id-110 .is-layout-flex.wp-container-3.wp-block-columns.alignwide {
+  border-bottom: solid 3px;
+  padding-bottom: 60px;
+}
+
+#main .wp-container-6 > div:first-child {
+  margin-bottom: 50px;
+}
+/*** OM Nørrebro United ***/
+.page-id-107 .wp-container-15 > div:first-child {
+  order: 2;
+}
+
+.page-id-107 .wp-container-15 > div:nth-child(2) {
+  order: 1;
+}
+
+/*** BESTYRRELSE ***/
+.page-id-130 .wp-container-3 > div:first-child {
+  order: 2;
+}
+.page-id-130 .wp-container-3 > div:nth-child(2) {
+  order: 1;
 }
 
 /*** BLIV MEDLEM ***/
@@ -495,6 +615,98 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
 
   main#main.site-main {
     padding-top: 0;
+  }
+
+  /*** NYHEDER OG ARRANGEMENTER ***/
+
+  #nyheder,
+  #arrangementer {
+    max-width: 1500px;
+  }
+  #nyheder .news_content,
+  #arrangementer .arrangement_content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 400px);
+    justify-content: flex-start;
+    padding-inline: unset;
+  }
+
+  #nyheder .news_content .news_article,
+  #arrangementer .arrangement_content .news_article {
+    display: grid;
+    grid-template-rows: auto;
+    max-width: 400px;
+    background-color: white;
+    padding: 10px;
+    border: unset;
+    cursor: pointer;
+    transition: 250ms;
+  }
+  #nyheder .news_content .news_article:hover,
+  #arrangementer .arrangement_content .news_article:hover {
+    max-width: 400px;
+    background-color: white;
+    padding: 10px;
+    border: unset;
+    filter: drop-shadow(7px 7px 3px #1f1f1f5e);
+    transform: translate(-3px, -3px);
+    cursor: pointer;
+  }
+
+  #main .news_article > .news_title {
+    color: var(--colorange);
+  }
+
+  #main .news_article > .date {
+    color: var(--collightgreen2);
+    font-style: italic;
+    align-self: flex-end;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  /*** FODBOLD ***/
+  .wp-container-11 > div:first-child {
+    order: 1;
+  }
+  .wp-container-11 > div:nth-child(2) {
+    order: 2;
+  }
+
+  #filter_buttons {
+    display: flex;
+    justify-content: space-around;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  #filter_buttons button {
+    width: 180px;
+  }
+
+  /*** VORES HOLD ***/
+  .wp-container-5 > div:first-child {
+    order: 1;
+  }
+
+  .wp-container-5 > div:nth-child(2) {
+    order: 2;
+  }
+
+  /*** OM Nørrebro United ***/
+  .page-id-107 .wp-container-15 > div:first-child {
+    order: 1;
+  }
+
+  .page-id-107 .wp-container-15 > div:nth-child(2) {
+    order: 2;
+  }
+
+  /*** BESTYRRELSE ***/
+  .page-id-130 .wp-container-3 > div:first-child {
+    order: 1;
+  }
+  .page-id-130 .wp-container-3 > div:nth-child(2) {
+    order: 2;
   }
 }
 
