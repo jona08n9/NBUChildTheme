@@ -26,7 +26,9 @@ TABLE OF CONTENT
         4.3.2 - ADRESS
         4.3.3 - SOME
         4.3.4 - GO TO TOP
-5.0.0 - LEAFLET MAP STYLING
+5.0.0 - FRONT PAGE
+    5.1.0 - H2 SPACING CHANGE
+    5.2.0 - LEAFLET MAP STYLING
 6.0.0 - VORES HOLD
 7.0.0 - NYHEDER OG ARRANGEMENTER
 8.0.0 - BLIV MEDLEM
@@ -59,11 +61,11 @@ ____________________________________________________
   --collightgreen2: #1b5a2a;
 
   /* NEW SIZES */
-  --header0: clamp(2.2rem, 5vw, 2.5rem);
-  --header1: clamp(1.7em, 5vw, 2.0rem);
-  --header2: clamp(1.5rem, 5vw, 1.7rem);
-  --header3: clamp(1.2rem, 5vw, 1.5rem);
-  --header4: clamp(1rem, 5vw, 1.2rem)
+  --header0: clamp(2.0rem, 5vw, 3.5rem);
+  --header1: clamp(1.7em, 5vw, 2.5rem);
+  --header2: clamp(1.5rem, 5vw, 2rem);
+  --header3: clamp(1.2rem, 5vw, 1.7rem);
+  --header4: clamp(1rem, 5vw, 1.3rem)
   --para: 1rem;
   /*
   --header1: clamp(2.3rem, 5vw, 5rem);
@@ -81,13 +83,23 @@ ____________________________________________________
 
 /*** GENERELT ***/
 
+
+/** COLUMN SPACING **/
+#main .wp-block-columns {
+  margin-block: 5rem;
+}
+
 /** HEADERS **/
+
+#main .wp-block-cover__inner-container > h3,
+#main .wp-block-cover__inner-container > h2 {
+  color: var(--colorange);
+}
 
 /* FRONT IMAGE COVER HEADER */
 #main .wp-block-cover__inner-container > h1 {
-  font-family: var(--headerfont);
   text-transform: uppercase;
-  font-size: var(--header1) var(--header0);
+  font: var(--header1) var(--headerfont);
   letter-spacing: 4px;
 }
 
@@ -106,21 +118,9 @@ ____________________________________________________
 
 /* H2 */
 #main h2 {
-  font-family: var(--headerfont);
+  font: italic var(--header2) var(--headerfont);
   text-transform: uppercase;
   color: var(--coldarkgreen);
-  font-size: var(--header2);
-  margin-block-start: 5rem;
-  font-style: italic;
-}
-
-#main .wp-block-cover__inner-container > h3,
-#main .wp-block-cover__inner-container > h2 {
-  color: var(--colorange);
-}
-
-#main .wp-block-columns .wp-block-column h2:first-child {
-  margin-block-start: 0;
 }
 
 /* H3 */
@@ -129,7 +129,6 @@ ____________________________________________________
   font-size: var(--header3);
   color: var(--collightgreen2);
   text-transform: uppercase;
-  margin-block-start: 3rem;
 }
 
 /* H4 */
@@ -227,8 +226,16 @@ li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-childr
   text-decoration: none;
 }
 
-/*** LEAFLET MAP STYLING ***/
+/*** FRONT PAGE ***/
 
+/** H2 SPACING CHANGE **/
+
+.home #main .wp-container-15 {
+  margin-block-start: 20px;
+}
+
+
+/** LEAFLET MAP STYLING **/
 .leaflet-control-attribution .leaflet-control {
   display: none;
 }
