@@ -58,7 +58,7 @@ ____________________________________________________
   --headerfont: "forma-djr-display";
   --parafont: "mr-eaves-modern";
 
-  margin-block-start: 2rem;
+  /* margin-block-start: 2rem; */
 
   scroll-behavior: smooth;
 
@@ -66,10 +66,6 @@ ____________________________________________________
 }
 
 /*** GENERELT ***/
-
-main#main.site-main {
-  max-width: 1200px;
-}
 
 /** HEADERS **/
 
