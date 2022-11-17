@@ -58,14 +58,21 @@ ____________________________________________________
   --collightgreen: #4e9b45;
   --collightgreen2: #1b5a2a;
 
+  /* NEW SIZES */
+  --header0: clamp(2.2rem, 5vw, 2.5rem);
+  --header1: clamp(1.7em, 5vw, 2.0rem);
+  --header2: clamp(1.5rem, 5vw, 1.7rem);
+  --header3: clamp(1.2rem, 5vw, 1.5rem);
+  --header4: clamp(1rem, 5vw, 1.2rem)
+  --para: 1rem;
+  /*
   --header1: clamp(2.3rem, 5vw, 5rem);
   --header2: clamp(2.1rem, 5vw, 3.5rem);
   --header3: clamp(1.6rem, 5vw, 1.8rem);
   --para: 1.3rem;
+  */
   --headerfont: "forma-djr-display";
   --parafont: "mr-eaves-modern";
-
-  /* margin-block-start: 2rem; */
 
   scroll-behavior: smooth;
 
@@ -76,26 +83,25 @@ ____________________________________________________
 
 /** HEADERS **/
 
-/* H1 */
-#main .entry-header {
-  max-width: 1500px;
-  margin-bottom: 30px;
-  padding-bottom: 30px;
-}
-
-.entry-header h1.entry-title {
-  font-family: var(--headerfont);
-  text-transform: uppercase;
-  font-size: var(--header1);
-  color: var(--coldarkgreen);
-  font-weight: 900;
-  max-width: 15ch;
-}
-
+/* FRONT IMAGE COVER HEADER */
 #main .wp-block-cover__inner-container > h1 {
   font-family: var(--headerfont);
   text-transform: uppercase;
-  font-size: var(--header1);
+  font-size: var(--header1) var(--header0);
+  letter-spacing: 4px;
+}
+
+/* H1 */
+.entry-header h1.entry-title {
+  font: bold var(--header1) var(--headerfont);
+  text-transform: uppercase;
+  color: var(--coldarkgreen);
+  max-width: 15ch;
+}
+
+#main .entry-header {
+  max-width: 1500px;
+  margin-bottom: 30px;
 }
 
 /* H2 */
