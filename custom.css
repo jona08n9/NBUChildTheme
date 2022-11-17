@@ -34,6 +34,12 @@ TABLE OF CONTENT
 10.0.0 - OM NØRREBRO UNITED
 
 X.X.X - MEDIA Q MIN-WIDTH 500PX
+  1.0.0 - LOGO
+  2.0.0 - ADDRESS
+  3.0.0 - SOCIALS
+  4.0.0 - TO TOP
+  5.0.0 - HEADER
+  6.0.0 - NYHEDER OG ARRANGEMENTER
 
 X.X.X - MEDIA Q MIN-WIDTH 767PX
   1.0.0 - FODBOLD
@@ -184,7 +190,12 @@ a:hover {
 
 #site-navigation .primary-menu-container,
 #site-navigation .menu-button-container,
-.primary-navigation > div > .menu-wrapper > li > .sub-menu li.menu-item.menu-item-type-post_type.menu-item-object-page {
+.primary-navigation
+  > div
+  > .menu-wrapper
+  > li
+  > .sub-menu
+  li.menu-item.menu-item-type-post_type.menu-item-object-page {
   background-color: var(--colwhite);
 }
 
@@ -600,7 +611,7 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
     justify-content: center;
   }
 
-  /* ADRESS */
+  /* ADDRESS */
   .footer__adress {
     text-align: left;
     grid-column: 2;
