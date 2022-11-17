@@ -362,7 +362,6 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
   }
 
   /* LOGO */
-
   .site-logo {
     display: flex;
     justify-content: center;
@@ -398,7 +397,6 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
   }
 
   /*** HEADER ***/
-
   ul.sub-menu {
     border: solid 1px var(--coldarkgreen) !important;
   }
