@@ -363,16 +363,15 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
 }
 
 /*** VORES HOLD ***/
-/* #teamview {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-}
 
-.team img {
-  max-width: 20%;
-  aspect-ratio: 1/1;
-  border-radius: 5px;
-} */
+.entry-content {
+  width: 90%;
+}
+.team_pic {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto 24px;
+}
 
 /*** NYHEDER OG ARRANGEMENTER ***/
 
@@ -680,7 +679,7 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
 
   #nyheder .news_content .news_article,
   #arrangementer .arrangement_content .news_article,
-  #teamview .team {
+  #media #teamview > .team {
     display: grid;
     grid-template-rows: auto;
     max-width: 400px;
