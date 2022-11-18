@@ -63,7 +63,6 @@
 </article>
 
 </template>
-<h1>tester best</h1>
 	</div><!-- .entry-content -->
 
 	<script>
@@ -91,7 +90,7 @@ let medlem;
 				clone.querySelector(".bestyrelsesmedlem_billede").src = medlem.visitkort.guid;
 				clone.querySelector(".medlem_navn").textContent = medlem.title.rendered;
 				clone.querySelector(".medlem_stilling").textContent = medlem.funktion;
-				clone.querySelector(".medlem_mail").innerHTML = `<a href="mailto:${medlem.mail}>${medlem.mail}</a>`;
+				clone.querySelector(".medlem_mail").innerHTML = `<a href="mailto:${medlem.mail}">${medlem.mail}</a>`;
 
 				section_medlem.appendChild(clone);
 
