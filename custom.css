@@ -786,6 +786,15 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
     font-style: italic;
     align-self: flex-end;
   }
+
+  /*** BLIV FRIVILLIG  ***/
+  .page-id-110 #content {
+    padding-inline: 0;
+  }
+
+  #content .bliv_frivillig_padding {
+    padding: 50px;
+  }
 }
 
 @media screen and (min-width: 767px) {
