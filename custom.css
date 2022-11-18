@@ -219,12 +219,7 @@ a:hover {
 
 #site-navigation .primary-menu-container,
 #site-navigation .menu-button-container,
-.primary-navigation
-  > div
-  > .menu-wrapper
-  > li
-  > .sub-menu
-  li.menu-item.menu-item-type-post_type.menu-item-object-page {
+.primary-navigation > div > .menu-wrapper > li > .sub-menu li.menu-item.menu-item-type-post_type.menu-item-object-page {
   background-color: var(--colwhite);
 }
 
@@ -796,17 +791,6 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
 }
 
 @media screen and (min-width: 767px) {
-  /*   .widget-area,
-  .pagination,
-  .comments-pagination,
-  .post-navigation,
-  .site-footer,
-  .site-header,
-  .alignwide,
-  .wide-max-width {
-    max-width: 1500px !important;
-  } */
-
   /*** OM Nørrebro United ***/
   .page-id-107 .wp-container-15 > div:first-child {
     order: 1;
