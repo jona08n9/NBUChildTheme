@@ -421,7 +421,8 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
 
 #arrangementer .arrangement_content,
 #nyheder .news_content,
-#teamview {
+#teamview,
+#medlemmer .medlem_content {
   max-width: 1300px;
   margin: 0 auto;
   display: flex;
@@ -433,7 +434,8 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
 }
 
 .news_article,
-.team {
+.team,
+.medlem_article {
   border-bottom: solid 3px var(--coldarkgreen);
   padding-bottom: 15px;
 }
@@ -537,6 +539,10 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
   order: 1;
 }
 
+.has-text-align-center {
+  margin: auto;
+}
+
 /*** BLIV MEDLEM ***/
 
 .wp-block-cover.is-light {
@@ -636,6 +642,10 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
   order: 1;
 }
 
+.is-layout-flow wp-block-column li {
+  list-style: disclosure-closed;
+  padding-block: 20px;
+}
 /* FORSIDE */
 
 .is-layout-flex.wp-container-15.wp-block-columns.alignwide {
@@ -728,7 +738,8 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
   }
   #nyheder .news_content,
   #arrangementer .arrangement_content,
-  #teamview {
+  #teamview,
+  #medlemmer .medlem_content {
     display: grid;
     grid-template-columns: repeat(auto-fit, 400px);
     /*     justify-content: flex-start;
@@ -737,7 +748,8 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
 
   #nyheder .news_content .news_article,
   #arrangementer .arrangement_content .news_article,
-  #teamview .team {
+  #teamview .team,
+  .medlem_content .medlem_article {
     display: grid;
     grid-template-rows: auto;
     max-width: 400px;

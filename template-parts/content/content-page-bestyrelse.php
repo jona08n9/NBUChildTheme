@@ -63,7 +63,6 @@
 </article>
 
 </template>
-<h1>tester best</h1>
 	</div><!-- .entry-content -->
 
 	<script>
