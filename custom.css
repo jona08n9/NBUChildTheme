@@ -56,7 +56,7 @@ ____________________________________________________
   --colwhite: #f2f2f2;
   --colblack: #1f1f1f;
   --colorange: #f5912e;
-  --coldarkgreen: #1a310f;
+  --coldarkgreen: #11381a;
   --collightgreen: #4e9b45;
   --collightgreen2: #1b5a2a;
 
@@ -103,7 +103,7 @@ ____________________________________________________
 /* FRONT IMAGE COVER HEADER */
 #main .wp-block-cover__inner-container > h1 {
   text-transform: uppercase;
-  font: var(--header0) var(--headerfont);
+  font: 900 var(--header0) var(--headerfont);
   letter-spacing: 4px;
 }
 
