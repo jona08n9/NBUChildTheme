@@ -38,11 +38,14 @@
 			)
 		);
 		?>
-<nav id="filter_buttons" class="filter_buttons_vores-hold">
+	
+		<nav id="filter_buttons" class="filter_buttons_vores-hold">
 	<button data-sport="alle">Alle</button>
 	<button data-sport="3">Fodbold</button>
 	<button data-sport="4">Håndbold</button>
 	</nav>
+
+
 		
 		<div id="teamview">
 

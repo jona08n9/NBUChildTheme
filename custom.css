@@ -409,16 +409,6 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
   height: 50px !important;
 }
 
-/*** VORES HOLD ***/
-
-.team_pic {
-  max-width: 100%;
-}
-
-#teamview .team_name {
-  margin-block-start: unset;
-}
-
 /*** NYHEDER OG ARRANGEMENTER ***/
 
 #arrangementer .arrangement_content,
@@ -503,6 +493,18 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
 }
 
 /*** VORES HOLD ***/
+.team_pic {
+  max-width: 100%;
+}
+
+#teamview .team_name {
+  margin-block-start: unset;
+}
+
+.is-layout-flex.wp-container-5.wp-block-columns.alignwide.vores_hold_content {
+  margin-block-end: 5rem;
+}
+
 .wp-container-5 > div:first-child {
   order: 2;
 }
@@ -512,7 +514,12 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
 }
 
 #filter_buttons.filter_buttons_vores-hold {
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+#filter_buttons.filter_buttons_vores-hold button:nth-child(3) {
+  flex-grow: 100%;
 }
 
 /*** BLIV MEDLEM ***/
@@ -531,6 +538,16 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
 
 .page-id-107 .wp-container-15 > div:nth-child(2) {
   order: 1;
+}
+
+.is-layout-flex.wp-container-5.wp-block-columns.alignwide {
+  margin-block-end: 6rem;
+}
+.is-layout-flex.wp-container-10.wp-block-columns.alignwide {
+  margin-block-end: 6rem;
+}
+.is-layout-flex.wp-container-15.wp-block-columns.alignwide {
+  margin-block-end: 6rem;
 }
 
 /*** BESTYRRELSE ***/
@@ -603,19 +620,6 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
 } */
 .valgt {
   background-color: var(--colblack);
-}
-
-/*** VORES HOLD ***/
-.wp-container-5 > div:first-child {
-  order: 2;
-}
-
-.wp-container-5 > div:nth-child(2) {
-  order: 1;
-}
-
-#filter_buttons.filter_buttons_vores-hold {
-  grid-template-columns: repeat(3, 1fr);
 }
 
 /*** BLIV MEDLEM ***/
