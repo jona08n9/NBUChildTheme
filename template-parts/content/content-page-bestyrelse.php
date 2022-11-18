@@ -39,7 +39,7 @@
 		?>
 
 <section id="medlemmer">
-<h2>Medlemmer</h2>
+<h3>Medlemmer</h3>
 <div class="medlem_content">
 
 </div>

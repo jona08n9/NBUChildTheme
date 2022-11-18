@@ -26,7 +26,9 @@ TABLE OF CONTENT
         4.3.2 - ADRESS
         4.3.3 - SOME
         4.3.4 - GO TO TOP
-5.0.0 - LEAFLET MAP STYLING
+5.0.0 - FRONT PAGE
+    5.1.0 - H2 SPACING CHANGE
+    5.2.0 - LEAFLET MAP STYLING
 6.0.0 - VORES HOLD
 7.0.0 - NYHEDER OG ARRANGEMENTER
 8.0.0 - BLIV MEDLEM
@@ -54,18 +56,22 @@ ____________________________________________________
   --colwhite: #f2f2f2;
   --colblack: #1f1f1f;
   --colorange: #f5912e;
-  --coldarkgreen: #1a310f;
+  --coldarkgreen: #11381a;
   --collightgreen: #4e9b45;
   --collightgreen2: #1b5a2a;
 
-  --header1: clamp(2.3rem, 5vw, 5rem);
-  --header2: clamp(2.1rem, 5vw, 3.5rem);
-  --header3: clamp(1.6rem, 5vw, 1.8rem);
+  /* NEW SIZES */
+  --header0: clamp(3rem, 5vw, 4.5rem);
+  --header1: clamp(2.5em, 5vw, 3.5rem);
+  --header2: clamp(2.2rem, 5vw, 3rem);
+  --header3: clamp(1.2rem, 5vw, 2.3rem);
+  --header4: clamp(1rem, 5vw, 1.3rem);
   --para: 1.3rem;
-  --headerfont: "forma-djr-display";
-  --parafont: "mr-eaves-modern";
 
-  /* margin-block-start: 2rem; */
+  --headerfont: "forma-djr-display";
+  /* --parafont: "mr-eaves-modern"; */
+  --parafont: "Lato", sans-serif;
+  /* LATO WITH WEIGHT: 300, 400+italic, 700+italic */
 
   scroll-behavior: smooth;
 
@@ -74,79 +80,86 @@ ____________________________________________________
 
 /*** GENERELT ***/
 
+/** COLUMN SPACING **/
+.home #main .wp-block-columns {
+  margin-block: 5rem;
+}
+
+.home #main .wp-container-5.wp-block-columns {
+  margin-block: 2rem;
+}
+
+#content {
+  padding: 10px;
+}
+
 /** HEADERS **/
-
-/* H1 */
-#main .entry-header {
-  max-width: 1500px;
-  margin-bottom: 30px;
-  padding-bottom: 30px;
-}
-
-.entry-header h1.entry-title {
-  font-family: var(--headerfont);
-  text-transform: uppercase;
-  font-size: var(--header1);
-  color: var(--coldarkgreen);
-  font-weight: 900;
-  max-width: 15ch;
-}
-
-#main .wp-block-cover__inner-container > h1 {
-  font-family: var(--headerfont);
-  text-transform: uppercase;
-  font-size: var(--header1);
-}
-
-/* H2 */
-#main h2 {
-  font-family: var(--headerfont);
-  text-transform: uppercase;
-  color: var(--coldarkgreen);
-  font-size: var(--header2);
-  margin-block-start: 5rem;
-  font-style: italic;
-}
 
 #main .wp-block-cover__inner-container > h3,
 #main .wp-block-cover__inner-container > h2 {
   color: var(--colorange);
 }
 
-#main .wp-block-columns .wp-block-column h2:first-child {
-  margin-block-start: 0;
+/* FRONT IMAGE COVER HEADER */
+#main .wp-block-cover__inner-container > h1 {
+  text-transform: uppercase;
+  font: 900 var(--header0) var(--headerfont);
+  letter-spacing: 4px;
+}
+
+.home.page .wp-duotone-unset-6.wp-block-cover.alignfull {
+  min-height: 650px !important;
+}
+
+/* H1 */
+.entry-header h1.entry-title {
+  font: bold var(--header1) var(--headerfont);
+  text-transform: uppercase;
+  color: var(--coldarkgreen);
+  letter-spacing: 4px;
+}
+
+#main .entry-header {
+  max-width: 1500px;
+  margin-bottom: 10px;
+  padding-block-end: 20px;
+}
+
+/* H2 */
+#main h2 {
+  font: italic var(--header2) var(--headerfont);
+  text-transform: uppercase;
+  color: var(--coldarkgreen);
 }
 
 /* H3 */
 #main h3 {
-  font-family: var(--headerfont);
-  font-size: var(--header3);
+  font: var(--header3) var(--headerfont);
   color: var(--collightgreen2);
   text-transform: uppercase;
-  margin-block-start: 3rem;
 }
 
 /* H4 */
 h4 {
-  font-family: var(--headerfont) !important; /*IMPORTANT FOR OVERWRITING PARENT THEME*/
-  font-size: var(--header3) !important; /*IMPORTANT FOR OVERWRITING PARENT THEME*/
+  font: italic bolder var(--header4) var(--headerfont) !important; /*IMPORTANT FOR OVERWRITING PARENT THEME*/
   color: var(--colwhite);
+  /* font-weight: 900 !important;
+  font-style: italic !important; */
   text-transform: uppercase;
-  font-style: italic;
-  font-weight: 900 !important; /*IMPORTANT FOR OVERWRITING PARENT THEME*/
   padding-block-end: 20px !important; /*IMPORTANT FOR OVERWRITING PARENT THEME*/
 }
 
 h5 {
   font-family: var(--headerfont);
 }
+
 /** P **/
 #main p {
   font-family: var(--parafont);
   font-size: var(--para);
   color: var(--colblack);
   line-height: 25px;
-  max-width: 56ch;
+  max-width: 60ch;
 }
 
 #main .wp-block-cover__inner-container p {
@@ -154,18 +167,24 @@ h5 {
 }
 
 /** BUTTONS **/
-#main .wp-block-button__link.wp-element-button,
-button.read_more {
+
+#main button {
   background-color: var(--coldarkgreen);
   color: var(--colwhite);
-  font-family: var(--headerfont);
+  border-radius: 10px;
+  text-transform: uppercase;
+  transition: all 0.25ms ease-in-out;
 }
-#main .wp-block-button__link.wp-element-button:hover,
-button.read_more:hover {
-  background-color: transparent !important; /*IMPORTANT FOR OVERWRITING PARENT THEME*/
-  color: var(--coldarkgreen) !important; /*IMPORTANT FOR OVERWRITING PARENT THEME*/
-  border-color: var(--coldarkgreen) !important; /*IMPORTANT FOR OVERWRITING PARENT THEME*/
+
+#main button:hover,
+#main button:active,
+#main button:focus {
+  background-color: var(--collightgreen);
+  color: var(--colblack);
+  border-color: var(--collightgreen);
 }
+
+/* #main .wp-block-button__link.wp-element-button:hover */
 
 #main .wp-block-cover__inner-container .wp-block-button__link.wp-element-button {
   border-color: var(--colorange);
@@ -174,12 +193,15 @@ button.read_more:hover {
   border-radius: 10px;
   text-transform: uppercase;
   font-family: var(--headerfont);
+  transition: all 0.25ms ease-in-out;
 }
-#main .wp-block-cover__inner-container .wp-block-button__link.wp-element-button:hover {
+#main .wp-block-button:not(.is-style-outline) .wp-block-button__link:hover,
+#main .wp-block-button:not(.is-style-outline) .wp-block-button__link:active {
   border-color: var(--colwhite) !important; /*IMPORTANT FOR OVERWRITING PARENT THEME*/
   background-color: var(--colwhite) !important; /*IMPORTANT FOR OVERWRITING PARENT THEME*/
-  color: var(--colblack) !important; /*IMPORTANT FOR OVERWRITING PARENT THEME*/
+  color: var(--coldarkgreen) !important; /*IMPORTANT FOR OVERWRITING PARENT THEME*/
 }
+
 /* links */
 a {
   color: var(--coldarkgreen);
@@ -190,16 +212,16 @@ a:hover {
   color: var(--collightgreen);
 }
 
+.has-background-white .site a:focus:not(.wp-block-button__link):not(.wp-block-file__button) {
+  background-color: transparent !important;
+  color: var(--collightgreen) !important;
+}
+
 /*** HEADER  ***/
 
 #site-navigation .primary-menu-container,
 #site-navigation .menu-button-container,
-.primary-navigation
-  > div
-  > .menu-wrapper
-  > li
-  > .sub-menu
-  li.menu-item.menu-item-type-post_type.menu-item-object-page {
+.primary-navigation > div > .menu-wrapper > li > .sub-menu li.menu-item.menu-item-type-post_type.menu-item-object-page {
   background-color: var(--colwhite);
 }
 
@@ -218,7 +240,7 @@ li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-childr
 }
 
 #masthead.site-header {
-  padding-bottom: 20px;
+  padding-block-start: 20px;
   margin-inline: 10px;
 }
 
@@ -230,8 +252,15 @@ li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-childr
   text-decoration: none;
 }
 
-/*** LEAFLET MAP STYLING ***/
+/*** FRONT PAGE ***/
 
+/** H2 SPACING CHANGE **/
+
+.home #main .wp-container-15 {
+  margin-block-start: 20px;
+}
+
+/** LEAFLET MAP STYLING **/
 .leaflet-control-attribution .leaflet-control {
   display: none;
 }
@@ -292,11 +321,12 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
   grid-column: 1 / 4;
   font-style: normal;
   text-align: center;
-  margin-block-end: 50px;
+  margin-block: 20px 50px;
 }
 
 .footer__adress p {
   text-decoration: none;
+  font-size: 1rem;
 }
 
 .footer__adress a {
@@ -446,11 +476,11 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
   margin-inline: 20px;
 }
 
-#filter_buttons button {
+/* #filter_buttons button {
   padding: 10px;
   border-radius: 5px;
   background-color: var(--collightgreen2);
-}
+} */
 .valgt {
   background-color: var(--colblack);
 }
@@ -545,11 +575,11 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
   margin-inline: 20px;
 }
 
-#filter_buttons button {
+/* #filter_buttons button {
   padding: 10px;
   border-radius: 5px;
   background-color: var(--collightgreen2);
-}
+} */
 .valgt {
   background-color: var(--colblack);
 }
@@ -609,9 +639,55 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
   color: var(--colwhite);
 }
 @media screen and (min-width: 500px) {
+  /*PAGE*/
   * {
     font-size: 16px;
   }
+
+  #content {
+    padding: 30px 50px;
+  }
+
+  .home #main .wp-container-5.wp-block-columns {
+    margin-block: 20px;
+  }
+
+  .home #content {
+    padding-inline: 0;
+  }
+
+  article.page > .entry-content > div,
+  #main article.page > .entry-content > h2,
+  #main article.page > .entry-content > h3,
+  #main article.page > .entry-content .wpforms-container.wpforms-container-full,
+  #medlemmer {
+    max-width: 1500px;
+  }
+
+  #medlemmer {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .home.page .entry-content > div {
+    padding-inline: 50px;
+  }
+
+  .home.page .wp-duotone-unset-6.wp-block-cover.alignfull {
+    max-width: none;
+    padding-inline: 0;
+  }
+
+  #post-107 .is-layout-flow.wp-block-column .alignwide,
+  #post-130 .is-layout-flow.wp-block-column .alignwide {
+    margin-left: 0;
+  }
+
+  #post-126 .entry-content > div {
+    margin-block: 50px 100px;
+  }
+
+  /*FOOTER */
 
   .site-info {
     padding-inline: 10px;
@@ -622,18 +698,21 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
     grid-template-rows: 1fr;
     grid-template-areas: "logo adress some top";
     gap: 20px;
+    padding: 10px;
   }
 
   /* LOGO */
   .site-logo {
     display: flex;
     justify-content: center;
+    margin: 0 !important;
   }
 
   /* ADDRESS */
   .footer__adress {
     text-align: left;
     grid-column: 2;
+    margin-block: 0;
   }
 
   /* SOCIALS */
@@ -667,7 +746,7 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
   #masthead.site-header {
     padding-inline: 40px;
     max-width: 100vw;
-    padding-block: 0;
+    padding-block-end: 0;
   }
   #primary-menu-list > li > a:focus,
   .primary-navigation a:hover {
@@ -729,44 +808,6 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
 }
 
 @media screen and (min-width: 767px) {
-  /*   .widget-area,
-  .pagination,
-  .comments-pagination,
-  .post-navigation,
-  .site-footer,
-  .site-header,
-  .alignwide,
-  .wide-max-width {
-    max-width: 1500px !important;
-  } */
-
-  /*** FODBOLD ***/
-  .wp-container-11 > div:first-child {
-    order: 1;
-  }
-  .wp-container-11 > div:nth-child(2) {
-    order: 2;
-  }
-
-  #filter_buttons {
-    display: flex;
-    justify-content: space-around;
-    max-width: 900px;
-    margin: 0 auto;
-  }
-  #filter_buttons button {
-    width: 180px;
-  }
-
-  /*** VORES HOLD ***/
-  .wp-container-5 > div:first-child {
-    order: 1;
-  }
-
-  .wp-container-5 > div:nth-child(2) {
-    order: 2;
-  }
-
   /*** OM Nørrebro United ***/
   .page-id-107 .wp-container-15 > div:first-child {
     order: 1;
