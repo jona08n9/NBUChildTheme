@@ -103,7 +103,7 @@ ____________________________________________________
 /* FRONT IMAGE COVER HEADER */
 #main .wp-block-cover__inner-container > h1 {
   text-transform: uppercase;
-  font: 900 var(--header0) var(--headerfont);
+  font: var(--header0) var(--headerfont);
   letter-spacing: 4px;
 }
 
@@ -113,7 +113,7 @@ ____________________________________________________
 
 /* H1 */
 .entry-header h1.entry-title {
-  font: bold var(--header1) var(--headerfont);
+  font: 900 var(--header1) var(--headerfont);
   text-transform: uppercase;
   color: var(--coldarkgreen);
   letter-spacing: 4px;
@@ -664,7 +664,8 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
   }
 
   #post-107 .is-layout-flow.wp-block-column .alignwide,
-  #post-130 .is-layout-flow.wp-block-column .alignwide {
+  #post-130 .is-layout-flow.wp-block-column .alignwide,
+  #post-103 .entry-content > p {
     margin-left: 0;
   }
 
