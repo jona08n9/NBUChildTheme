@@ -221,12 +221,7 @@ a:hover {
 
 #site-navigation .primary-menu-container,
 #site-navigation .menu-button-container,
-.primary-navigation
-  > div
-  > .menu-wrapper
-  > li
-  > .sub-menu
-  li.menu-item.menu-item-type-post_type.menu-item-object-page {
+.primary-navigation > div > .menu-wrapper > li > .sub-menu li.menu-item.menu-item-type-post_type.menu-item-object-page {
   background-color: var(--colwhite);
 }
 
@@ -634,6 +629,10 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
   order: 1;
 }
 
+.is-layout-flow wp-block-column li {
+  list-style: disclosure-closed;
+  padding-block: 20px;
+}
 /* FORSIDE */
 
 .is-layout-flex.wp-container-15.wp-block-columns.alignwide {
