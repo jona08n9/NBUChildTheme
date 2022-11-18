@@ -547,7 +547,8 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
 }
 
 is-layout-flex.wp-container-5.wp-block-columns.alignwide,
-is-layout-flex.wp-container-10.wp-block-columns.alignwide {
+is-layout-flex.wp-container-10.wp-block-columns.alignwide,
+is-layout-flex.wp-container-15.wp-block-columns.alignwide {
   margin-block-end: 6rem;
 }
 
