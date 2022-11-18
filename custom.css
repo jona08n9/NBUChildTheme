@@ -61,8 +61,8 @@ ____________________________________________________
   --collightgreen2: #1b5a2a;
 
   /* NEW SIZES */
-  --header0: clamp(3rem, 5vw, 4.5rem);
-  --header1: clamp(2.5em, 5vw, 3.5rem);
+  --header0: clamp(3rem, 5vw, 5rem);
+  --header1: clamp(2.5em, 5vw, 4.3rem);
   --header2: clamp(2.2rem, 5vw, 3rem);
   --header3: clamp(1.2rem, 5vw, 2.3rem);
   --header4: clamp(1rem, 5vw, 1.3rem);
@@ -212,6 +212,16 @@ a:hover {
   color: var(--collightgreen);
 }
 
+a.text-link {
+  color: var(--colorange);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+a.text-link:hover {
+  text-decoration: underline;
+}
+
 .has-background-white .site a:focus:not(.wp-block-button__link):not(.wp-block-file__button) {
   background-color: transparent !important;
   color: var(--collightgreen) !important;
@@ -221,12 +231,7 @@ a:hover {
 
 #site-navigation .primary-menu-container,
 #site-navigation .menu-button-container,
-.primary-navigation
-  > div
-  > .menu-wrapper
-  > li
-  > .sub-menu
-  li.menu-item.menu-item-type-post_type.menu-item-object-page {
+.primary-navigation > div > .menu-wrapper > li > .sub-menu li.menu-item.menu-item-type-post_type.menu-item-object-page {
   background-color: var(--colwhite);
 }
 
@@ -292,6 +297,7 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
   margin-bottom: 0 !important;
   padding-top: 60px !important;
   padding-bottom: 60px;
+  display: flex;
   justify-content: center;
   padding-inline: 20px;
 }
@@ -302,6 +308,8 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
   grid-template-rows: auto;
   grid-template-areas: "top top top" "logo adress some";
   gap: 5px;
+  max-width: 500px;
+  align-items: center;
 }
 
 /** FOOTER TEXT **/
@@ -693,57 +701,6 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
     margin-block: 50px 100px;
   }
 
-  /*FOOTER */
-
-  .site-info {
-    padding-inline: 10px;
-  }
-
-  .site-name {
-    grid-template-columns: repeat(3, 1fr) 3fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "logo adress some top";
-    gap: 20px;
-    padding: 10px;
-  }
-
-  /* LOGO */
-  .site-logo {
-    display: flex;
-    justify-content: center;
-    margin: 0 !important;
-  }
-
-  /* ADDRESS */
-  .footer__adress {
-    text-align: left;
-    grid-column: 2;
-    margin-block: 0;
-  }
-
-  /* SOCIALS */
-  .footer__socials__icons--container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin-block: 50px;
-  }
-
-  .footer__socials {
-    grid-area: some;
-  }
-
-  /* TO TOP */
-  .toTop {
-    align-items: normal;
-    text-align: normal;
-    margin-block-end: 0;
-  }
-
-  #toTop {
-    text-align: right;
-    font-size: 1.3rem;
-  }
-
   /*** HEADER ***/
   ul.sub-menu {
     border: solid 1px var(--coldarkgreen) !important;
@@ -829,5 +786,57 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
   }
   .page-id-130 .wp-container-3 > div:nth-child(2) {
     order: 2;
+  }
+
+  /*FOOTER */
+
+  .site-info {
+    padding-inline: 10px;
+  }
+
+  .site-name {
+    grid-template-columns: repeat(3, 1fr) 3fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "logo adress some top";
+    gap: 20px;
+    padding: 10px;
+    max-width: 1500px;
+  }
+
+  /* LOGO */
+  .site-logo {
+    display: flex;
+    justify-content: center;
+    margin: 0 !important;
+  }
+
+  /* ADDRESS */
+  .footer__adress {
+    text-align: left;
+    grid-column: 2;
+    margin-block: 0;
+  }
+
+  /* SOCIALS */
+  .footer__socials__icons--container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-block: 50px;
+  }
+
+  .footer__socials {
+    grid-area: some;
+  }
+
+  /* TO TOP */
+  .toTop {
+    align-items: normal;
+    text-align: normal;
+    margin-block-end: 0;
+  }
+
+  #toTop {
+    text-align: right;
+    font-size: 1.3rem;
   }
 }
