@@ -525,6 +525,16 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
   order: 1;
 }
 
+.is-layout-flex.wp-container-5.wp-block-columns.alignwide {
+  margin-block-end: 6rem;
+}
+.is-layout-flex.wp-container-10.wp-block-columns.alignwide {
+  margin-block-end: 6rem;
+}
+.is-layout-flex.wp-container-15.wp-block-columns.alignwide {
+  margin-block-end: 6rem;
+}
+
 /*** BESTYRRELSE ***/
 .page-id-130 .wp-container-3 > div:first-child {
   order: 2;
@@ -826,9 +836,5 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
   }
   .page-id-130 .wp-container-3 > div:nth-child(2) {
     order: 2;
-  }
-
-  /*** VORES HOLD  ***/
-  #filter_buttons.filter_buttons_vores-hold {
   }
 }
