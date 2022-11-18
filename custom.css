@@ -154,12 +154,14 @@ h5 {
 }
 
 /** BUTTONS **/
-#main .wp-block-button__link.wp-element-button {
+#main .wp-block-button__link.wp-element-button,
+button.read_more {
   background-color: var(--coldarkgreen);
   color: var(--colwhite);
   font-family: var(--headerfont);
 }
-#main .wp-block-button__link.wp-element-button:hover {
+#main .wp-block-button__link.wp-element-button:hover,
+button.read_more:hover {
   background-color: transparent !important; /*IMPORTANT FOR OVERWRITING PARENT THEME*/
   color: var(--coldarkgreen) !important; /*IMPORTANT FOR OVERWRITING PARENT THEME*/
   border-color: var(--coldarkgreen) !important; /*IMPORTANT FOR OVERWRITING PARENT THEME*/
@@ -364,13 +366,12 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
 
 /*** VORES HOLD ***/
 
-.entry-content {
-  width: 90%;
-}
 .team_pic {
-  width: 100%;
   max-width: 100%;
-  margin: 0 auto 24px;
+}
+
+#teamview .team_name {
+  margin-block-start: unset;
 }
 
 /*** NYHEDER OG ARRANGEMENTER ***/
@@ -673,13 +674,13 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
   #teamview {
     display: grid;
     grid-template-columns: repeat(auto-fit, 400px);
-    justify-content: flex-start;
-    padding-inline: unset;
+    /*     justify-content: flex-start;
+    padding-inline: unset; */
   }
 
   #nyheder .news_content .news_article,
   #arrangementer .arrangement_content .news_article,
-  #media #teamview > .team {
+  #teamview .team {
     display: grid;
     grid-template-rows: auto;
     max-width: 400px;
