@@ -64,7 +64,7 @@
 
 		<template>
 	<div class="team">
-	<img class="team_pic"src="" alt="">
+	<img class="team_pic" id="team_billede" src="" alt="">
 	<h3 class="team_name"></h3>
 	<p class="short_description"></p>
 	<p class="kategori"></p>
@@ -127,7 +127,7 @@ function visHold(){
 
 				const clone = template.cloneNode(true).content;
 				clone.querySelector("img").src = team.billeder[0].guid;
-				clone.querySelector("h3").innerHTML = `<h3>${team.title.rendered}</h3>`;
+				clone.querySelector("h3").innerHTML = `${team.title.rendered}`;
 
 				clone.querySelector(".team").addEventListener("click", () =>{
 					location.href = team.link;})
