@@ -152,12 +152,14 @@ h4 {
 h5 {
   font-family: var(--headerfont);
 }
+
 /** P **/
 #main p {
   font-family: var(--parafont);
   font-size: var(--para);
   color: var(--colblack);
   line-height: 25px;
+  max-width: 60ch;
 }
 
 #main .wp-block-cover__inner-container p {
