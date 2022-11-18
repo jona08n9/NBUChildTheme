@@ -304,12 +304,13 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
 
 .site-name {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto;
-  grid-template-areas: "top top top" "logo adress some";
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-areas: "logo top" "adress adress" "some some";
   gap: 5px;
   max-width: 500px;
   align-items: center;
+  justify-content: center;
 }
 
 /** FOOTER TEXT **/
@@ -325,16 +326,16 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
 .site-logo {
   grid-area: logo;
   display: flex;
-  grid-row: 1 / span 1;
+  justify-content: center;
+  align-items: center;
+  margin-inline-end: 20px;
 }
 
 /* ADRESS */
 .footer__adress {
   grid-area: adress;
-  grid-column: 1 / 4;
-  font-style: normal;
   text-align: center;
-  margin-block: 20px 50px;
+  margin-block: 20px 30px;
 }
 
 .footer__adress p {
@@ -354,8 +355,9 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
 
 /* SOME */
 .footer__socials {
-  grid-column: 1 / 4;
+  grid-area: some;
   text-align: center;
+  justify-content: center;
 }
 
 .footer__socials__icons--container {
@@ -375,10 +377,10 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
 
 .toTop {
   grid-area: top;
-  margin-block-end: 40px;
+  margin-inline-start: 20px;
   display: flex;
-  justify-content: flex-end;
-  align-content: flex-end;
+  justify-content: center;
+  align-content: center;
   align-items: center;
 }
 
@@ -813,6 +815,7 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
     gap: 20px;
     padding: 10px;
     max-width: 1500px;
+    align-items: flex-start;
   }
 
   /* LOGO */
@@ -842,8 +845,8 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
 
   /* TO TOP */
   .toTop {
-    align-items: normal;
-    text-align: normal;
+    justify-self: flex-end;
+    text-align: right;
     margin-block-end: 0;
   }
 
