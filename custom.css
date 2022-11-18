@@ -190,6 +190,7 @@ h5 {
   color: var(--coldarkgreen);
   border-radius: 10px;
   text-transform: uppercase;
+  font-family: var(--headerfont);
   transition: all 0.25ms ease-in-out;
 }
 #main .wp-block-button:not(.is-style-outline) .wp-block-button__link:hover,
@@ -218,7 +219,12 @@ a:hover {
 
 #site-navigation .primary-menu-container,
 #site-navigation .menu-button-container,
-.primary-navigation > div > .menu-wrapper > li > .sub-menu li.menu-item.menu-item-type-post_type.menu-item-object-page {
+.primary-navigation
+  > div
+  > .menu-wrapper
+  > li
+  > .sub-menu
+  li.menu-item.menu-item-type-post_type.menu-item-object-page {
   background-color: var(--colwhite);
 }
 
@@ -392,21 +398,20 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
 }
 
 /*** VORES HOLD ***/
-#teamview {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+
+.team_pic {
+  max-width: 100%;
 }
 
-.team img {
-  max-width: 20%;
-  aspect-ratio: 1/1;
-  border-radius: 5px;
+#teamview .team_name {
+  margin-block-start: unset;
 }
 
 /*** NYHEDER OG ARRANGEMENTER ***/
 
 #arrangementer .arrangement_content,
-#nyheder .news_content {
+#nyheder .news_content,
+#teamview {
   max-width: 1300px;
   margin: 0 auto;
   display: flex;
@@ -417,8 +422,9 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
   padding-inline: 10px;
 }
 
-.news_article {
-  border-bottom: solid 3px #1f1f1f;
+.news_article,
+.team {
+  border-bottom: solid 3px var(--coldarkgreen);
   padding-bottom: 15px;
 }
 
@@ -746,15 +752,17 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
     max-width: 1500px;
   }
   #nyheder .news_content,
-  #arrangementer .arrangement_content {
+  #arrangementer .arrangement_content,
+  #teamview {
     display: grid;
     grid-template-columns: repeat(auto-fit, 400px);
-    justify-content: flex-start;
-    padding-inline: unset;
+    /*     justify-content: flex-start;
+    padding-inline: unset; */
   }
 
   #nyheder .news_content .news_article,
-  #arrangementer .arrangement_content .news_article {
+  #arrangementer .arrangement_content .news_article,
+  #teamview .team {
     display: grid;
     grid-template-rows: auto;
     max-width: 400px;
@@ -775,8 +783,9 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
     cursor: pointer;
   }
 
-  #main .news_article > .news_title {
-    color: var(--colorange);
+  #main .news_article > .news_title,
+  #main .team > .team_name {
+    color: var(--collightgreen2);
   }
 
   #main .news_article > .date {
@@ -787,32 +796,16 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
 }
 
 @media screen and (min-width: 767px) {
-  /*** FODBOLD ***/
-  .wp-container-11 > div:first-child {
-    order: 1;
-  }
-  .wp-container-11 > div:nth-child(2) {
-    order: 2;
-  }
-
-  #filter_buttons {
-    display: flex;
-    justify-content: space-around;
-    max-width: 900px;
-    margin: 0 auto;
-  }
-  #filter_buttons button {
-    width: 180px;
-  }
-
-  /*** VORES HOLD ***/
-  .wp-container-5 > div:first-child {
-    order: 1;
-  }
-
-  .wp-container-5 > div:nth-child(2) {
-    order: 2;
-  }
+  /*   .widget-area,
+  .pagination,
+  .comments-pagination,
+  .post-navigation,
+  .site-footer,
+  .site-header,
+  .alignwide,
+  .wide-max-width {
+    max-width: 1500px !important;
+  } */
 
   /*** OM Nørrebro United ***/
   .page-id-107 .wp-container-15 > div:first-child {
