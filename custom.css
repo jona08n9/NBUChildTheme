@@ -103,7 +103,7 @@ ____________________________________________________
 /* FRONT IMAGE COVER HEADER */
 #main .wp-block-cover__inner-container > h1 {
   text-transform: uppercase;
-  font: var(--header0) var(--headerfont);
+  font: 900 var(--header0) var(--headerfont);
   letter-spacing: 4px;
 }
 
