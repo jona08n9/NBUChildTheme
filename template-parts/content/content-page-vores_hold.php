@@ -40,9 +40,9 @@
 		?>
 	
 		<nav id="filter_buttons" class="filter_buttons_vores-hold">
-	<button data-sport="alle">Alle</button>
-	<button data-sport="3">Fodbold</button>
-	<button data-sport="4">Håndbold</button>
+	<button data-sport="alle" onclick="window.location.href = '#teamview';"  >Alle</button>
+	<button data-sport="3" onclick="window.location.href = '#teamview';">Fodbold</button>
+	<button data-sport="4" onclick="window.location.href = '#teamview';">Håndbold</button>
 	</nav>
 
 

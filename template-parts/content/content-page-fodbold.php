@@ -47,10 +47,10 @@
 	
 
 	<nav id="filter_buttons">
-<button data-sport="alle">Alle</button>
-	<button data-sport="14">Børn (4-19 år)</button>
-	<button data-sport="5">Herre senior</button>
-	<button data-sport="6">Kvinde senior</button>
+<button data-sport="alle" onclick="window.location.href = '#teamview';">Alle</button>
+	<button data-sport="14" onclick="window.location.href = '#teamview';">Børn (4-19 år)</button>
+	<button data-sport="5" onclick="window.location.href = '#teamview';">Herre senior</button>
+	<button data-sport="6" onclick="window.location.href = '#teamview';">Kvinde senior</button>
 	</nav>
 
 
