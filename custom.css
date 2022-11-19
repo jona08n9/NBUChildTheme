@@ -196,7 +196,9 @@ h5 {
   transition: all 0.25ms ease-in-out;
 }
 #main .wp-block-button:not(.is-style-outline) .wp-block-button__link:hover,
-#main .wp-block-button:not(.is-style-outline) .wp-block-button__link:active {
+#main .wp-block-button:not(.is-style-outline) .wp-block-button__link:active,
+#main .link_til_frivillig_form a:hover,
+#main .link_til_frivillig_form a:hover {
   border-color: var(--colwhite) !important; /*IMPORTANT FOR OVERWRITING PARENT THEME*/
   background-color: var(--colwhite) !important; /*IMPORTANT FOR OVERWRITING PARENT THEME*/
   color: var(--coldarkgreen) !important; /*IMPORTANT FOR OVERWRITING PARENT THEME*/
@@ -667,6 +669,24 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
 #main .is-layout-flex.wp-container-15.wp-block-columns.alignwide p {
   color: var(--colwhite);
 }
+
+/*** BLIV FRIVILLIG  ***/
+
+#main .link_til_frivillig_form a,
+#main .link_til_frivillig_form a {
+  text-decoration: none;
+  font: var(--branding--title--font-size);
+
+  border-color: var(--colorange);
+  background-color: var(--colorange);
+  color: var(--coldarkgreen);
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-family: var(--headerfont);
+  transition: all 0.25ms ease-in-out;
+  padding: 20px 40px;
+}
+
 @media screen and (min-width: 500px) {
   /*PAGE*/
   * {
