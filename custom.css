@@ -204,6 +204,24 @@ h5 {
   color: var(--coldarkgreen) !important; /*IMPORTANT FOR OVERWRITING PARENT THEME*/
 }
 
+.page-id-112 #main .wp-block-button:not(.is-style-outline) .wp-block-button__link,
+.page-id-114 #main .wp-block-button:not(.is-style-outline) .wp-block-button__link,
+.page-id-126 #main .wp-block-button:not(.is-style-outline) .wp-block-button__link {
+  border-color: var(--colorange);
+  background-color: var(--colorange);
+  color: var(--coldarkgreen);
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-family: var(--headerfont);
+  transition: all 0.25ms ease-in-out;
+}
+
+.page-id-112 #main .wp-block-button:not(.is-style-outline) .wp-block-button__link:hover,
+.page-id-114 #main .wp-block-button:not(.is-style-outline) .wp-block-button__link:hover,
+.page-id-126 #main .wp-block-button:not(.is-style-outline) .wp-block-button__link:hover {
+  border-color: var(--colblack) !important;
+}
+
 /* links */
 a {
   color: var(--coldarkgreen);
@@ -494,21 +512,6 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
   background-color: var(--colblack);
 }
 
-.page-id-112 #main .wp-block-button:not(.is-style-outline) .wp-block-button__link,
-.page-id-114 #main .wp-block-button:not(.is-style-outline) .wp-block-button__link {
-  border-color: var(--colorange);
-  background-color: var(--colorange);
-  color: var(--coldarkgreen);
-  border-radius: 10px;
-  text-transform: uppercase;
-  font-family: var(--headerfont);
-  transition: all 0.25ms ease-in-out;
-}
-
-.page-id-112 #main .wp-block-button:not(.is-style-outline) .wp-block-button__link:hover,
-.page-id-114 #main .wp-block-button:not(.is-style-outline) .wp-block-button__link:hover {
-  border-color: var(--colblack) !important;
-}
 /*** VORES HOLD ***/
 .team_pic {
   max-width: 100%;
@@ -702,6 +705,15 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
   padding: 20px 40px;
 }
 
+/*** SPONSOR  ***/
+
+.page-id-126 .wp-container-16 > div:first-child {
+  order: 2;
+}
+
+.page-id-126 .wp-container-16 > div:nth-child(2) {
+  order: 1;
+}
 @media screen and (min-width: 500px) {
   /*PAGE*/
   * {
@@ -833,6 +845,16 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
 
   .page-id-110 article.page > .entry-content > div {
     max-width: none;
+  }
+
+  /*** SPONSOR  ***/
+
+  .page-id-126 .wp-container-16 > div:first-child {
+    order: 1;
+  }
+
+  .page-id-126 .wp-container-16 > div:nth-child(2) {
+    order: 2;
   }
 }
 

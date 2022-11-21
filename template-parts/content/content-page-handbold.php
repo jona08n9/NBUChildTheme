@@ -72,7 +72,7 @@
 // opretter variabler
 let categories;
 		// let filter_sport= "alle";
-		// const catUrl="https://madvigux.dk/nbunited/wp-json/wp/v2/categories";
+		const catUrl="https://madvigux.dk/nbunited/wp-json/wp/v2/categories";
 
 
 		let hold;
@@ -86,9 +86,9 @@ getJson();
 		// Henter json med hold og json med categorier
 		async function getJson(){
 			let response = await fetch(url);
-			// let catdata = await fetch(catUrl);
+			let catdata = await fetch(catUrl);
 			hold = await response.json();
-			// categories = await catdata.json();
+			categories = await catdata.json();
 			// console.log(categories);
 			console.log(hold);
 			// addEventListenerToButtons();
@@ -119,8 +119,7 @@ function visHold(){
 
 			hold.forEach(team => {
 
-			
-
+			if(team.categories.includes(parseInt(4))){
 				const clone = template.cloneNode(true).content;
 				clone.querySelector("img").src = team.billeder[0].guid;
 				clone.querySelector("h3").innerHTML = `<h3>${team.title.rendered}</h3>`;
@@ -128,6 +127,10 @@ function visHold(){
 				clone.querySelector(".team").addEventListener("click", () =>{
 					location.href = team.link;})
 				team_view.appendChild(clone);
+
+			}
+
+				
 				
 			
 				})

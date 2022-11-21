@@ -123,17 +123,23 @@ function visHold(){
 
 			hold.forEach(team => {
 
-			if (filter_sport == "alle" || team.categories.includes(parseInt(filter_sport))){
+				if (team.categories.includes(parseInt(3))){
 
-				const clone = template.cloneNode(true).content;
-				clone.querySelector("img").src = team.billeder[0].guid;
-				clone.querySelector("h3").innerHTML = `${team.title.rendered}`;
+					if (filter_sport == "alle" || team.categories.includes(parseInt(filter_sport))){
 
-				clone.querySelector(".team").addEventListener("click", () =>{
-					location.href = team.link;})
-				team_view.appendChild(clone);
-				
-			}
+const clone = template.cloneNode(true).content;
+clone.querySelector("img").src = team.billeder[0].guid;
+clone.querySelector("h3").innerHTML = `${team.title.rendered}`;
+
+clone.querySelector(".team").addEventListener("click", () =>{
+	location.href = team.link;})
+team_view.appendChild(clone);
+
+}
+
+				}
+
+			
 				})
 		}
 
