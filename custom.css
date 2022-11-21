@@ -815,6 +815,10 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
   #content .bliv_frivillig_padding {
     padding: 50px;
   }
+
+  .page-id-110 article.page > .entry-content > div {
+    max-width: none;
+  }
 }
 
 @media screen and (min-width: 767px) {
