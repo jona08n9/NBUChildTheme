@@ -494,6 +494,21 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
   background-color: var(--colblack);
 }
 
+.page-id-112 #main .wp-block-button:not(.is-style-outline) .wp-block-button__link,
+.page-id-114 #main .wp-block-button:not(.is-style-outline) .wp-block-button__link {
+  border-color: var(--colorange);
+  background-color: var(--colorange);
+  color: var(--coldarkgreen);
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-family: var(--headerfont);
+  transition: all 0.25ms ease-in-out;
+}
+
+.page-id-112 #main .wp-block-button:not(.is-style-outline) .wp-block-button__link:hover,
+.page-id-114 #main .wp-block-button:not(.is-style-outline) .wp-block-button__link:hover {
+  border-color: var(--colblack) !important;
+}
 /*** VORES HOLD ***/
 .team_pic {
   max-width: 100%;
