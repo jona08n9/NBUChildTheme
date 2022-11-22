@@ -40,6 +40,7 @@
 	<div class="kas kampklar">
 		<h3>Her bruger vi kampklar</h3>
 		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, ipsum? Architecto adipisci reprehenderit earum. Dignissimos quas dolore delectus quis, fugit molestias laudantium facere nisi vero atque est maxime consectetur laboriosam ea dicta! Nihil temporibus numquam explicabo unde laboriosam veniam quis!</p>
+		<img src="https://madvigux.dk/nbunited/wp-content/uploads/2022/11/kampklar-qr-code.png" alt="qr kode, som leder til app store, eller google play.">
 	</div>
 </div>
 
