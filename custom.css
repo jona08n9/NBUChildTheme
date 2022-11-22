@@ -143,8 +143,6 @@ ____________________________________________________
 h4 {
   font: italic bolder var(--header4) var(--headerfont) !important; /*IMPORTANT FOR OVERWRITING PARENT THEME*/
   color: var(--colwhite);
-  /* font-weight: 900 !important;
-  font-style: italic !important; */
   text-transform: uppercase;
   padding-block-end: 20px !important; /*IMPORTANT FOR OVERWRITING PARENT THEME*/
 }
@@ -183,8 +181,6 @@ h5 {
   color: var(--colblack);
   border-color: var(--collightgreen);
 }
-
-/* #main .wp-block-button__link.wp-element-button:hover */
 
 #main .wp-block-cover__inner-container .wp-block-button__link.wp-element-button {
   border-color: var(--colorange);
@@ -245,6 +241,16 @@ a.text-link:hover {
 .has-background-white .site a:focus:not(.wp-block-button__link):not(.wp-block-file__button) {
   background-color: transparent !important;
   color: var(--collightgreen) !important;
+}
+
+#main .navigation a:hover {
+  text-decoration: none;
+}
+
+#main .nav-next a:hover p,
+#main .nav-previous a:hover p {
+  color: var(--colorange);
+  text-decoration: underline var(--colorange) solid;
 }
 
 /*** HEADER  ***/
@@ -435,21 +441,94 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
 #nyheder .news_content,
 #teamview,
 #medlemmer .medlem_content {
-  max-width: 1300px;
-  margin: 0 auto;
+  max-width: 400px;
+  min-width: calc(100% - 40px);
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
   grid-gap: 2.2em;
-  padding-top: 50px;
+  padding-top: 30px;
   justify-content: space-evenly;
-  padding-inline: 10px;
 }
 
-.news_article,
-.team,
-.medlem_article {
-  border: solid 3px var(--coldarkgreen);
-  padding-bottom: 15px;
+#nyheder .news_content .news_article,
+#arrangementer .arrangement_content .news_article,
+#teamview .team,
+.medlem_content .medlem_article {
+  width: 100%;
+  max-width: 400px;
+  background-color: white;
+  border: none;
+  font-size: var(--header4);
+  transition: all 150ms ease-in-out;
+}
+
+#nyheder .news_content .news_article:focus,
+#nyheder .news_content .news_article:active,
+#nyheder .news_content .news_article:hover,
+#arrangementer .arrangement_content .news_article:focus,
+#arrangementer .arrangement_content .news_article:active,
+#arrangementer .arrangement_content .news_article:hover,
+#teamview .team:focus,
+#teamview .team:active,
+#teamview .team:hover,
+.medlem_content .medlem_article:focus,
+.medlem_content .medlem_article:active,
+.medlem_content .medlem_article:hover {
+  cursor: pointer;
+  filter: drop-shadow(2px 2px 5px var(--coldarkgreen));
+  transform: translate(-3px, -3px);
+}
+
+#nyheder .news_article .news_pic,
+#arrangementer .news_article .news_pic {
+  padding: 0 10px;
+}
+
+#nyheder .news_article .news_title,
+#nyheder .news_article .resume,
+#nyheder .news_article .date,
+#arrangementer .news_article .news_title,
+#arrangementer .news_article .resume,
+#arrangementer .news_article .date,
+#teamview .team .team_name {
+  padding: 10px;
+  font-size: var(--header4);
+}
+
+#main .type-nyheder {
+  margin-bottom: 30px;
+}
+
+.type-nyheder .entry-content {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.single_view_news {
+  margin-top: 5px !important;
+}
+
+#main .single_view_news .single_published {
+  margin-block-end: 15px;
+  font-style: italic;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+#main .single_news_pic {
+  max-width: 100%;
+  display: block;
+  margin-inline: auto;
+}
+
+.single_news_content .article_text {
+  margin-bottom: 40px;
+}
+
+#main .type-nyheder footer {
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 /*** BLIV MEDLEM ***/
@@ -495,19 +574,6 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
   justify-content: center;
 }
 
-#filter_buttons {
-  display: grid;
-  flex-wrap: wrap;
-  grid-template-columns: 1fr 1fr;
-  gap: 15px;
-  margin-inline: 20px;
-}
-
-/* #filter_buttons button {
-  padding: 10px;
-  border-radius: 5px;
-  background-color: var(--collightgreen2);
-} */
 .valgt {
   background-color: var(--colblack);
 }
@@ -515,10 +581,6 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
 /*** VORES HOLD ***/
 .team_pic {
   max-width: 100%;
-}
-
-#teamview .team_name {
-  margin-block-start: unset;
 }
 
 .is-layout-flex.wp-container-5.wp-block-columns.alignwide.vores_hold_content {
@@ -533,13 +595,54 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
   order: 1;
 }
 
-#filter_buttons.filter_buttons_vores-hold {
-  display: flex;
-  margin: 0 auto;
-  justify-content: center;
-}
 #filter_buttons.filter_buttons_vores-hold button:nth-child(3) {
   flex-grow: 100%;
+}
+
+#teamview .read_more {
+  padding: 8px 16px;
+  margin: 10px 10px 15px;
+  font-size: 16px;
+}
+
+/*** HOLD ***/
+.traening_og_tilmeldning span {
+  font-weight: bold;
+}
+
+.hold_info > p {
+  margin-block: 10px 20px;
+}
+
+.hold_info .traening_og_tilmeldning p {
+  margin-block: 10px;
+}
+
+.traening_og_tilmeldning button {
+  padding: 8px 16px;
+}
+
+.traenere {
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.traener_billede {
+  max-width: calc(100% - 20px);
+}
+
+.traener_navn {
+  color: var(--coldarkgreen) !important;
+}
+
+.hold-galleri {
+  max-width: 100%;
+}
+
+#main .kas {
+  margin-block-end: 30px;
 }
 
 /*** BLIV MEDLEM ***/
@@ -559,12 +662,6 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
 .page-id-107 .wp-container-15 > div:nth-child(2) {
   order: 1;
 }
-
-/* .is-layout-flex.wp-container-5.wp-block-columns.alignwide,
-.is-layout-flex.wp-container-10.wp-block-columns.alignwide,
-.is-layout-flex.wp-container-15.wp-block-columns.alignwide {
-  margin-block-end: 6rem;
-} */
 
 #main article .bund-afstand {
   margin-block-end: 6rem;
@@ -626,18 +723,12 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
 }
 
 #filter_buttons {
-  display: grid;
+  display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  grid-template-columns: 1fr 1fr;
   gap: 15px;
-  margin-inline: 20px;
 }
 
-/* #filter_buttons button {
-  padding: 10px;
-  border-radius: 5px;
-  background-color: var(--collightgreen2);
-} */
 .valgt {
   background-color: var(--colblack);
 }
@@ -675,7 +766,6 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
 /* FORSIDE */
 
 .is-layout-flex.wp-container-15.wp-block-columns.alignwide {
-  background-color: var(--coldarkgreen);
   padding: 20px;
 }
 #main .is-layout-flex.wp-container-15.wp-block-columns.alignwide h3 {
@@ -758,9 +848,6 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
 
 @media screen and (min-width: 500px) {
   /*PAGE*/
-  * {
-    font-size: 16px;
-  }
 
   #content {
     padding: 30px 50px;
@@ -827,6 +914,14 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
 
   /*** NYHEDER OG ARRANGEMENTER ***/
 
+  .single_view_news {
+    margin-top: 5px !important;
+  }
+
+  .post-218 .entry-content .is-layout-flex.wp-container-2.wp-block-columns.alignwide {
+    margin-bottom: 4rem;
+  }
+
   #nyheder,
   #arrangementer {
     max-width: 1500px;
@@ -837,30 +932,11 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
   #medlemmer .medlem_content {
     display: grid;
     grid-template-columns: repeat(auto-fit, 400px);
-    /*     justify-content: flex-start;
-    padding-inline: unset; */
   }
 
-  #nyheder .news_content .news_article,
-  #arrangementer .arrangement_content .news_article,
-  #teamview .team,
-  .medlem_content .medlem_article {
-    display: grid;
-    grid-template-rows: auto;
-    max-width: 400px;
-    background-color: white;
-    border: none;
-    cursor: pointer;
-    transition: 250ms;
-  }
-  #nyheder .news_content .news_article:hover,
-  #arrangementer .arrangement_content .news_article:hover {
-    max-width: 400px;
-    background-color: white;
-    border: none;
-    filter: drop-shadow(7px 7px 3px #1f1f1f5e);
-    transform: translate(-3px, -3px);
-    cursor: pointer;
+  #nyheder .news_content,
+  #arrangementer .arrangement_content {
+    max-width: 100%;
   }
 
   #main .news_article > .news_title,
@@ -873,12 +949,6 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
     font-style: italic;
     align-self: flex-end;
   }
-
-  /* #nyheder .news_article .news_title,
-  #nyheder .news_article .resume,
-  #nyheder .news_article .date {
-    padding: 10px;
-  } */
 
   /*** BLIV FRIVILLIG  ***/
   .page-id-110 #content {
