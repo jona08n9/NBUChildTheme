@@ -12,45 +12,37 @@
 ?>
 
 <section>
-<main> 
+	<h1 class="hold_navn"></h1>
 
-
-
-<h1 class="hold_navn"></h1>
-
-<div class="hold_info">
-<p class="hold_beskrivelse"></p>
-
-<div class="traening_og_tilmeldning">
-<p class="traenings_tider"></p>	
-<p class="traenings_dage"></p>	
-<p class="traenings_lokation"></p>	
-<p class="pris"></p>
-<button>Tilmeld</button>
-</div>
-
-</div>
-
-
-<div class="traenere_og_kampklar">
-	<div class="traenere">
-
-	<h3>Trænere</h3>
-<img class="traener_billede" src="" alt="">
-<h3 class="traener_navn"></h3>
-<p class="traener_stilling"></p>
-<p class="traener_tlf"></p>
-<p class="traener_mail"></p>
+	<div class="kas hold_info">
+		<p class="hold_beskrivelse"></p>
+		<div class="traening_og_tilmeldning">
+			<p>Tid: <span class="traenings_tider"></span></p>	
+			<p>Dag: <span class="traenings_dage"></span></p>	
+			<p>Sted: <span class="traenings_lokation"></span></p>	
+			<p>Pris: <span class="pris"></span><span>(årspris).</span></p>	
+			<button>Tilmeld</button>
+		</div>
 	</div>
-	<div class="kampklar">
-		<h2>Her bruger vi kampklar</h2>
+
+
+<div class="kas traenere_og_kampklar">
+	<div class="kas traenere">
+		<h3>Trænere</h3>
+		<img class="traener_billede" src="" alt="">
+		<h4 class="traener_navn"></h4>
+		<p> <span class="traener_stilling"></span></p>
+		<p> <span class="traener_tlf"></span></p>
+		<p> <span class="traener_mail"></span></p>
+	</div>
+	
+	<div class="kas kampklar">
+		<h3>Her bruger vi kampklar</h3>
 		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, ipsum? Architecto adipisci reprehenderit earum. Dignissimos quas dolore delectus quis, fugit molestias laudantium facere nisi vero atque est maxime consectetur laboriosam ea dicta! Nihil temporibus numquam explicabo unde laboriosam veniam quis!</p>
 	</div>
-
-
 </div>
 
-<div class="hold_galleri">
+<div class="kas hold_galleri">
 <h3>Galleri</h3>
 <img class="billedegalleri" src="" alt="">
 

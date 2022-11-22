@@ -36,11 +36,7 @@
 	<!-- <h1>test</h1> -->
 	<section class="single_view_news">
 		<article class="single_news_content">
-
-		<h1 class="single_news_title"></h1>
-		<p class="single_date"></p>
-		<p class="single_author"></p>
-
+		<p class=single_published> <span class="single_date"></span>, <span class="single_author"></span></p>
 		<p class="article_text"></p>
 		<img class="single_news_pic" src="" alt="">
 	
@@ -67,7 +63,6 @@ async function getJson(){
 
 	function visSingleNews(){
 			
-			document.querySelector(".single_news_title").textContent = news.title.rendered;
 			document.querySelector(".single_date").textContent = news.dato;
 			document.querySelector(".single_author").textContent = news.forfatter;
 			document.querySelector(".article_text").innerHTML = news.paragraf;

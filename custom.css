@@ -243,6 +243,16 @@ a.text-link:hover {
   color: var(--collightgreen) !important;
 }
 
+#main .navigation a:hover {
+  text-decoration: none;
+}
+
+#main .nav-next a:hover p,
+#main .nav-previous a:hover p {
+  color: var(--colorange);
+  text-decoration: underline var(--colorange) solid;
+}
+
 /*** HEADER  ***/
 
 #site-navigation .primary-menu-container,
@@ -486,6 +496,41 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
   font-size: var(--header4);
 }
 
+#main .type-nyheder {
+  margin-bottom: 30px;
+}
+
+.type-nyheder .entry-content {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.single_view_news {
+  margin-top: 5px !important;
+}
+
+#main .single_view_news .single_published {
+  margin-block-end: 15px;
+  font-style: italic;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+#main .single_news_pic {
+  max-width: 100%;
+  display: block;
+  margin-inline: auto;
+}
+
+.single_news_content .article_text {
+  margin-bottom: 40px;
+}
+
+#main .type-nyheder footer {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
 /*** BLIV MEDLEM ***/
 
 .wp-block-cover.is-light {
@@ -558,6 +603,46 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
   padding: 8px 16px;
   margin: 10px 10px 15px;
   font-size: 16px;
+}
+
+/*** HOLD ***/
+.traening_og_tilmeldning span {
+  font-weight: bold;
+}
+
+.hold_info > p {
+  margin-block: 10px 20px;
+}
+
+.hold_info .traening_og_tilmeldning p {
+  margin-block: 10px;
+}
+
+.traening_og_tilmeldning button {
+  padding: 8px 16px;
+}
+
+.traenere {
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.traener_billede {
+  max-width: calc(100% - 20px);
+}
+
+.traener_navn {
+  color: var(--coldarkgreen) !important;
+}
+
+.hold-galleri {
+  max-width: 100%;
+}
+
+#main .kas {
+  margin-block-end: 30px;
 }
 
 /*** BLIV MEDLEM ***/
@@ -681,7 +766,6 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
 /* FORSIDE */
 
 .is-layout-flex.wp-container-15.wp-block-columns.alignwide {
-  background-color: var(--coldarkgreen);
   padding: 20px;
 }
 #main .is-layout-flex.wp-container-15.wp-block-columns.alignwide h3 {
@@ -722,9 +806,6 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
 }
 @media screen and (min-width: 500px) {
   /*PAGE*/
-  * {
-    font-size: 16px;
-  }
 
   #content {
     padding: 30px 50px;
@@ -790,6 +871,10 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
   }
 
   /*** NYHEDER OG ARRANGEMENTER ***/
+
+  .single_view_news {
+    margin-top: 5px !important;
+  }
 
   .post-218 .entry-content .is-layout-flex.wp-container-2.wp-block-columns.alignwide {
     margin-bottom: 4rem;
