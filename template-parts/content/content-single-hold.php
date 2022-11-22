@@ -17,6 +17,7 @@
 	<div class="kas hold_info">
 		<p class="hold_beskrivelse"></p>
 		<div class="traening_og_tilmeldning">
+			<h4> Om træningen: </h4>
 			<p>Tid: <span class="traenings_tider"></span></p>	
 			<p>Dag: <span class="traenings_dage"></span></p>	
 			<p>Sted: <span class="traenings_lokation"></span></p>	

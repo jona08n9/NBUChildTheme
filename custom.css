@@ -631,14 +631,15 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
 
 .traener_billede {
   max-width: calc(100% - 20px);
+  margin-bottom: 10px;
 }
 
 .traener_navn {
   color: var(--coldarkgreen) !important;
 }
 
-.hold-galleri {
-  max-width: 100%;
+.kas.hold_galleri img {
+  max-width: 100% !important;
 }
 
 #main .kas {
@@ -906,6 +907,36 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
     color: var(--collightgreen2);
     font-style: italic;
     align-self: flex-end;
+  }
+
+  /*** HOLD ***/
+  #main .kas.hold_info {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    margin-bottom: 4rem;
+  }
+
+  .traening_og_tilmeldning {
+    padding: 10px 25px;
+    border: 2px solid var(--coldarkgreen);
+    justify-self: end;
+    width: fit-content;
+  }
+
+  .traening_og_tilmeldning > h4 {
+    color: var(--coldarkgreen);
+    padding-block-end: 20px !important;
+  }
+
+  .traening_og_tilmeldning > button {
+    margin-block-start: 20px;
+  }
+
+  .traenere_og_kampklar {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
   }
 
   /*** BLIV FRIVILLIG  ***/
