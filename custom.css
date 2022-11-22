@@ -834,6 +834,13 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
     align-self: flex-end;
   }
 
+  #nyheder .news_article .news_pic,
+  #nyheder .news_article .news_title,
+  #nyheder .news_article .resume,
+  #nyheder .news_article .date {
+    max-width: 400px;
+  }
+
   /*** BLIV FRIVILLIG  ***/
   .page-id-110 #content {
     padding-inline: 0;
