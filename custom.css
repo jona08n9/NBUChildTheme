@@ -646,6 +646,10 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
   margin-block-end: 30px;
 }
 
+.kampklar img {
+  max-width: 200px;
+}
+
 /*** BLIV MEDLEM ***/
 .page-id-110 .is-layout-flex.wp-container-3.wp-block-columns.alignwide {
   border-bottom: solid 3px;
@@ -979,6 +983,7 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 20px;
+    align-items: flex-start;
   }
 
   /*** BLIV FRIVILLIG  ***/
