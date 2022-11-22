@@ -437,7 +437,7 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
   display: flex;
   flex-wrap: wrap;
   grid-gap: 2.2em;
-  padding-top: 50px;
+  padding-top: 30px;
   justify-content: space-evenly;
 }
 
