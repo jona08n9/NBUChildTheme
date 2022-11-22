@@ -448,7 +448,7 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
 .news_article,
 .team,
 .medlem_article {
-  border-bottom: solid 3px var(--coldarkgreen);
+  border: solid 3px var(--coldarkgreen);
   padding-bottom: 15px;
 }
 
@@ -807,8 +807,7 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
     grid-template-rows: auto;
     max-width: 400px;
     background-color: white;
-    padding: 10px;
-    border: unset;
+    border: none;
     cursor: pointer;
     transition: 250ms;
   }
@@ -816,8 +815,7 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
   #arrangementer .arrangement_content .news_article:hover {
     max-width: 400px;
     background-color: white;
-    padding: 10px;
-    border: unset;
+    border: none;
     filter: drop-shadow(7px 7px 3px #1f1f1f5e);
     transform: translate(-3px, -3px);
     cursor: pointer;
@@ -834,12 +832,11 @@ img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
     align-self: flex-end;
   }
 
-  #nyheder .news_article .news_pic,
-  #nyheder .news_article .news_title,
+  /* #nyheder .news_article .news_title,
   #nyheder .news_article .resume,
   #nyheder .news_article .date {
-    max-width: 400px;
-  }
+    padding: 10px;
+  } */
 
   /*** BLIV FRIVILLIG  ***/
   .page-id-110 #content {
